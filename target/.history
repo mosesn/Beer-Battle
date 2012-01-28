@@ -1,0 +1,3 @@
+exit
+container:compile
+container:start
