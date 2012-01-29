@@ -1,43 +1,43 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/moses/Projects/Current/scalatra-sbt-prototype/project/}default-c090ac...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/augusto/Dropbox/Programmings/BeerBattle/Beer-Battle/project/}default-9e1496...[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#default-c090ac;0.1-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#default-9e1496;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=compile[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=compile[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: no namespace defined: using system[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/com.github.siasia/xsbt-web-plugin_2.9.1/ivy-0.11.2-0.2.10.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/com.github.siasia/xsbt-web-plugin_2.9.1/ivy-0.11.2-0.2.10.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 (resolved by public): /home/moses/.ivy2/cache/com.github.siasia/xsbt-web-plugin_2.9.1/ivy-0.11.2-0.2.10.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 (resolved by public): /home/augusto/.ivy2/cache/com.github.siasia/xsbt-web-plugin_2.9.1/ivy-0.11.2-0.2.10.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10[0m
 [0m[[0mdebug[0m] [0msbt-chain: no latest strategy defined: using default[0m
 [0m[[0mdebug[0m] [0mlocal: no namespace defined: using system[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/com.github.siasia/xsbt-web-plugin_2.9.1/ivy-0.11.2-0.2.10.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 (resolved by public): /home/moses/.ivy2/cache/com.github.siasia/xsbt-web-plugin_2.9.1/ivy-0.11.2-0.2.10.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/com.github.siasia/xsbt-web-plugin_2.9.1/ivy-0.11.2-0.2.10.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 (resolved by public): /home/augusto/.ivy2/cache/com.github.siasia/xsbt-web-plugin_2.9.1/ivy-0.11.2-0.2.10.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10[0m
 [0m[[0mdebug[0m] [0m	checking com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 from public against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 from public[0m
 [0m[[0mdebug[0m] [0m	found com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=compile[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->compile][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10->com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 of rootConf=compile[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/com.github.siasia/plugin-commons_2.9.1/ivy-0.11.2-0.1.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/com.github.siasia/plugin-commons_2.9.1/ivy-0.11.2-0.1.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 (resolved by public): /home/moses/.ivy2/cache/com.github.siasia/plugin-commons_2.9.1/ivy-0.11.2-0.1.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 (resolved by public): /home/augusto/.ivy2/cache/com.github.siasia/plugin-commons_2.9.1/ivy-0.11.2-0.1.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/com.github.siasia/plugin-commons_2.9.1/ivy-0.11.2-0.1.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 (resolved by public): /home/moses/.ivy2/cache/com.github.siasia/plugin-commons_2.9.1/ivy-0.11.2-0.1.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/com.github.siasia/plugin-commons_2.9.1/ivy-0.11.2-0.1.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 (resolved by public): /home/augusto/.ivy2/cache/com.github.siasia/plugin-commons_2.9.1/ivy-0.11.2-0.1.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1[0m
 [0m[[0mdebug[0m] [0m	checking com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 from public against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 from public[0m
@@ -48,12 +48,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-lang#scala-library;2.9.1[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.9.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-lang/scala-library/ivy-2.9.1.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-lang/scala-library/ivy-2.9.1.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-lang#scala-library;2.9.1 (resolved by sbt-chain): /home/moses/.ivy2/cache/org.scala-lang/scala-library/ivy-2.9.1.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-lang#scala-library;2.9.1 (resolved by sbt-chain): /home/augusto/.ivy2/cache/org.scala-lang/scala-library/ivy-2.9.1.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.9.1[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-lang/scala-library/ivy-2.9.1.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-lang#scala-library;2.9.1 (resolved by sbt-chain): /home/moses/.ivy2/cache/org.scala-lang/scala-library/ivy-2.9.1.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-lang/scala-library/ivy-2.9.1.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-lang#scala-library;2.9.1 (resolved by sbt-chain): /home/augusto/.ivy2/cache/org.scala-lang/scala-library/ivy-2.9.1.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.9.1[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-lang#scala-library;2.9.1 from sbt-chain against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-lang#scala-library;2.9.1 from sbt-chain[0m
@@ -74,20 +74,20 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10->com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 of rootConf=compile[0m
 [0m[[0mdebug[0m] [0mcompile is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->master][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=compile[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=runtime[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=runtime[0m
 [0m[[0mdebug[0m] [0mruntime is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=runtime[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=runtime[0m
 [0m[[0mdebug[0m] [0mruntime is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->compile][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=runtime[0m
 [0m[[0mdebug[0m] [0mruntime is loaded and no conf to load.  Skip loading[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10->com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 [compile->master(*)][0m
@@ -112,24 +112,24 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1->org.scala-lang#scala-library;2.9.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime[0m
 [0m[[0mdebug[0m] [0mruntime is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->master][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=runtime[0m
 [0m[[0mdebug[0m] [0mruntime is loaded and no conf to load.  Skip loading[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=test[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=test[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=test[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=test[0m
 [0m[[0mdebug[0m] [0mtest is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=test[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=test[0m
 [0m[[0mdebug[0m] [0mtest is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=test[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=test[0m
 [0m[[0mdebug[0m] [0mtest is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->compile][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=test[0m
 [0m[[0mdebug[0m] [0mtest is loaded and no conf to load.  Skip loading[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10->com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 [compile->master(*)][0m
@@ -154,22 +154,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1->org.scala-lang#scala-library;2.9.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=test[0m
 [0m[[0mdebug[0m] [0mtest is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->master][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=test[0m
 [0m[[0mdebug[0m] [0mtest is loaded and no conf to load.  Skip loading[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=provided[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-tools.sbt#sbt_2.9.1;0.11.2 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=provided[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-tools.sbt#sbt_2.9.1;0.11.2 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#sbt_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#sbt_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#sbt_2.9.1;0.11.2 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/sbt_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/sbt_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#sbt_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/sbt_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#sbt_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/sbt_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#sbt_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/sbt_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#sbt_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/sbt_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/sbt_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#sbt_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/sbt_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#sbt_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#sbt_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#sbt_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -178,12 +178,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#main_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#main_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#main_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/main_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/main_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#main_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/main_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#main_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/main_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#main_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/main_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#main_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/main_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/main_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#main_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/main_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#main_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#main_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#main_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -192,12 +192,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#actions_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#actions_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#actions_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/actions_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/actions_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#actions_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/actions_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#actions_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/actions_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#actions_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/actions_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#actions_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/actions_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/actions_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#actions_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/actions_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#actions_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#actions_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#actions_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -206,12 +206,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#classfile_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#classfile_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#classfile_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/classfile_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/classfile_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#classfile_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/classfile_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#classfile_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/classfile_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#classfile_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/classfile_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#classfile_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/classfile_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/classfile_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#classfile_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/classfile_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#classfile_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#classfile_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#classfile_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -220,12 +220,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#io_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#io_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#io_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/io_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/io_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#io_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/io_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#io_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/io_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#io_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/io_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#io_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/io_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/io_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#io_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/io_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#io_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#io_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#io_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -234,12 +234,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#control_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#control_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#control_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/control_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/control_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#control_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/control_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#control_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/control_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#control_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/control_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#control_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/control_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/control_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#control_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/control_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#control_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#control_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#control_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -268,12 +268,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#interface;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#interface;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#interface;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/interface/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/interface/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#interface;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/interface/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#interface;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/interface/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#interface;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/interface/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#interface;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/interface/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/interface/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#interface;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/interface/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#interface;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#interface;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#interface;0.11.2 from typesafe-ivy-releases[0m
@@ -294,12 +294,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#logging_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#logging_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#logging_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/logging_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/logging_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#logging_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/logging_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#logging_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/logging_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#logging_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/logging_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#logging_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/logging_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/logging_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#logging_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/logging_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#logging_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#logging_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#logging_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -311,12 +311,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#process_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#process_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#process_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/process_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/process_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#process_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/process_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#process_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/process_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#process_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/process_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#process_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/process_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/process_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#process_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/process_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#process_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#process_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#process_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -361,12 +361,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#classpath_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#classpath_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#classpath_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/classpath_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/classpath_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#classpath_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/classpath_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#classpath_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/classpath_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#classpath_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/classpath_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#classpath_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/classpath_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/classpath_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#classpath_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/classpath_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#classpath_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#classpath_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#classpath_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -375,12 +375,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#launcher-interface_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#launcher-interface_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#launcher-interface_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/launcher-interface_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/launcher-interface_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#launcher-interface_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/launcher-interface_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#launcher-interface_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/launcher-interface_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#launcher-interface_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/launcher-interface_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#launcher-interface_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/launcher-interface_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/launcher-interface_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#launcher-interface_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/launcher-interface_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#launcher-interface_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#launcher-interface_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#launcher-interface_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -416,12 +416,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-compiler;2.9.1 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-lang#scala-compiler;2.9.1[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.9.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.9.1.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.9.1.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-lang#scala-compiler;2.9.1 (resolved by sbt-chain): /home/moses/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.9.1.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-lang#scala-compiler;2.9.1 (resolved by sbt-chain): /home/augusto/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.9.1.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.9.1[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.9.1.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-lang#scala-compiler;2.9.1 (resolved by sbt-chain): /home/moses/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.9.1.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.9.1.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-lang#scala-compiler;2.9.1 (resolved by sbt-chain): /home/augusto/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.9.1.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-compiler;2.9.1[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-lang#scala-compiler;2.9.1 from sbt-chain against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-lang#scala-compiler;2.9.1 from sbt-chain[0m
@@ -448,12 +448,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#incremental-compiler_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#incremental-compiler_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#incremental-compiler_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/incremental-compiler_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/incremental-compiler_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#incremental-compiler_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/incremental-compiler_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#incremental-compiler_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/incremental-compiler_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#incremental-compiler_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/incremental-compiler_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#incremental-compiler_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/incremental-compiler_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/incremental-compiler_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#incremental-compiler_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/incremental-compiler_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#incremental-compiler_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#incremental-compiler_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#incremental-compiler_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -462,12 +462,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#collections_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#collections_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#collections_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/collections_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/collections_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#collections_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/collections_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#collections_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/collections_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#collections_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/collections_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#collections_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/collections_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/collections_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#collections_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/collections_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#collections_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#collections_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#collections_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -488,12 +488,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#api_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#api_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#api_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/api_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/api_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#api_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/api_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#api_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/api_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#api_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/api_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#api_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/api_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/api_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#api_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/api_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#api_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#api_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#api_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -538,12 +538,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#persist_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#persist_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#persist_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/persist_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/persist_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#persist_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/persist_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#persist_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/persist_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#persist_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/persist_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#persist_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/persist_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/persist_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#persist_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/persist_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#persist_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#persist_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#persist_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -570,12 +570,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbinary#sbinary_2.9.0;0.4.0[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbinary/sbinary_2.9.0/ivy-0.4.0.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbinary/sbinary_2.9.0/ivy-0.4.0.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 (resolved by sbt-chain): /home/moses/.ivy2/cache/org.scala-tools.sbinary/sbinary_2.9.0/ivy-0.4.0.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 (resolved by sbt-chain): /home/augusto/.ivy2/cache/org.scala-tools.sbinary/sbinary_2.9.0/ivy-0.4.0.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbinary#sbinary_2.9.0;0.4.0[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbinary/sbinary_2.9.0/ivy-0.4.0.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 (resolved by sbt-chain): /home/moses/.ivy2/cache/org.scala-tools.sbinary/sbinary_2.9.0/ivy-0.4.0.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbinary/sbinary_2.9.0/ivy-0.4.0.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 (resolved by sbt-chain): /home/augusto/.ivy2/cache/org.scala-tools.sbinary/sbinary_2.9.0/ivy-0.4.0.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbinary#sbinary_2.9.0;0.4.0[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 from sbt-chain against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 from sbt-chain[0m
@@ -590,12 +590,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#compile_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#compile_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#compile_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/compile_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/compile_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#compile_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/compile_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#compile_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/compile_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#compile_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/compile_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#compile_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/compile_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/compile_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#compile_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/compile_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#compile_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#compile_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#compile_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -610,12 +610,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#ivy_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#ivy_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#ivy_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/ivy_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/ivy_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#ivy_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/ivy_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#ivy_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/ivy_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#ivy_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/ivy_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#ivy_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/ivy_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/ivy_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#ivy_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/ivy_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#ivy_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#ivy_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#ivy_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -648,12 +648,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.apache.ivy#ivy;2.2.0 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.apache.ivy#ivy;2.2.0[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.ivy#ivy;2.2.0 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.apache.ivy/ivy/ivy-2.2.0.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.apache.ivy/ivy/ivy-2.2.0.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.apache.ivy#ivy;2.2.0 (resolved by sbt-chain): /home/moses/.ivy2/cache/org.apache.ivy/ivy/ivy-2.2.0.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.apache.ivy#ivy;2.2.0 (resolved by sbt-chain): /home/augusto/.ivy2/cache/org.apache.ivy/ivy/ivy-2.2.0.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.ivy#ivy;2.2.0[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.apache.ivy/ivy/ivy-2.2.0.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.apache.ivy#ivy;2.2.0 (resolved by sbt-chain): /home/moses/.ivy2/cache/org.apache.ivy/ivy/ivy-2.2.0.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.apache.ivy/ivy/ivy-2.2.0.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.apache.ivy#ivy;2.2.0 (resolved by sbt-chain): /home/augusto/.ivy2/cache/org.apache.ivy/ivy/ivy-2.2.0.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.ivy#ivy;2.2.0[0m
 [0m[[0mdebug[0m] [0m	checking org.apache.ivy#ivy;2.2.0 from sbt-chain against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.apache.ivy#ivy;2.2.0 from sbt-chain[0m
@@ -668,12 +668,12 @@
 [0m[[0mdebug[0m] [0mloadData of com.jcraft#jsch;0.1.31 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve com.jcraft#jsch;0.1.31[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.jcraft#jsch;0.1.31 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/com.jcraft/jsch/ivy-0.1.31.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/com.jcraft/jsch/ivy-0.1.31.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for com.jcraft#jsch;0.1.31 (resolved by sbt-chain): /home/moses/.ivy2/cache/com.jcraft/jsch/ivy-0.1.31.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for com.jcraft#jsch;0.1.31 (resolved by sbt-chain): /home/augusto/.ivy2/cache/com.jcraft/jsch/ivy-0.1.31.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.jcraft#jsch;0.1.31[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/com.jcraft/jsch/ivy-0.1.31.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for com.jcraft#jsch;0.1.31 (resolved by sbt-chain): /home/moses/.ivy2/cache/com.jcraft/jsch/ivy-0.1.31.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/com.jcraft/jsch/ivy-0.1.31.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for com.jcraft#jsch;0.1.31 (resolved by sbt-chain): /home/augusto/.ivy2/cache/com.jcraft/jsch/ivy-0.1.31.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.jcraft#jsch;0.1.31[0m
 [0m[[0mdebug[0m] [0m	checking com.jcraft#jsch;0.1.31 from sbt-chain against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: com.jcraft#jsch;0.1.31 from sbt-chain[0m
@@ -688,12 +688,12 @@
 [0m[[0mdebug[0m] [0mloadData of commons-httpclient#commons-httpclient;3.1 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve commons-httpclient#commons-httpclient;3.1[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-httpclient#commons-httpclient;3.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/commons-httpclient/commons-httpclient/ivy-3.1.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/commons-httpclient/commons-httpclient/ivy-3.1.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for commons-httpclient#commons-httpclient;3.1 (resolved by sbt-chain): /home/moses/.ivy2/cache/commons-httpclient/commons-httpclient/ivy-3.1.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for commons-httpclient#commons-httpclient;3.1 (resolved by sbt-chain): /home/augusto/.ivy2/cache/commons-httpclient/commons-httpclient/ivy-3.1.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-httpclient#commons-httpclient;3.1[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/commons-httpclient/commons-httpclient/ivy-3.1.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for commons-httpclient#commons-httpclient;3.1 (resolved by sbt-chain): /home/moses/.ivy2/cache/commons-httpclient/commons-httpclient/ivy-3.1.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/commons-httpclient/commons-httpclient/ivy-3.1.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for commons-httpclient#commons-httpclient;3.1 (resolved by sbt-chain): /home/augusto/.ivy2/cache/commons-httpclient/commons-httpclient/ivy-3.1.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: commons-httpclient#commons-httpclient;3.1[0m
 [0m[[0mdebug[0m] [0m	checking commons-httpclient#commons-httpclient;3.1 from sbt-chain against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: commons-httpclient#commons-httpclient;3.1 from sbt-chain[0m
@@ -706,12 +706,12 @@
 [0m[[0mdebug[0m] [0mloadData of commons-logging#commons-logging;1.0.4 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve commons-logging#commons-logging;1.0.4[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-logging#commons-logging;1.0.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/commons-logging/commons-logging/ivy-1.0.4.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/commons-logging/commons-logging/ivy-1.0.4.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for commons-logging#commons-logging;1.0.4 (resolved by sbt-chain): /home/moses/.ivy2/cache/commons-logging/commons-logging/ivy-1.0.4.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for commons-logging#commons-logging;1.0.4 (resolved by sbt-chain): /home/augusto/.ivy2/cache/commons-logging/commons-logging/ivy-1.0.4.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-logging#commons-logging;1.0.4[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/commons-logging/commons-logging/ivy-1.0.4.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for commons-logging#commons-logging;1.0.4 (resolved by sbt-chain): /home/moses/.ivy2/cache/commons-logging/commons-logging/ivy-1.0.4.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/commons-logging/commons-logging/ivy-1.0.4.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for commons-logging#commons-logging;1.0.4 (resolved by sbt-chain): /home/augusto/.ivy2/cache/commons-logging/commons-logging/ivy-1.0.4.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: commons-logging#commons-logging;1.0.4[0m
 [0m[[0mdebug[0m] [0m	checking commons-logging#commons-logging;1.0.4 from sbt-chain against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: commons-logging#commons-logging;1.0.4 from sbt-chain[0m
@@ -722,12 +722,12 @@
 [0m[[0mdebug[0m] [0mloadData of commons-codec#commons-codec;1.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve commons-codec#commons-codec;1.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-codec#commons-codec;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/commons-codec/commons-codec/ivy-1.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/commons-codec/commons-codec/ivy-1.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for commons-codec#commons-codec;1.2 (resolved by sbt-chain): /home/moses/.ivy2/cache/commons-codec/commons-codec/ivy-1.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for commons-codec#commons-codec;1.2 (resolved by sbt-chain): /home/augusto/.ivy2/cache/commons-codec/commons-codec/ivy-1.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-codec#commons-codec;1.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/commons-codec/commons-codec/ivy-1.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for commons-codec#commons-codec;1.2 (resolved by sbt-chain): /home/moses/.ivy2/cache/commons-codec/commons-codec/ivy-1.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/commons-codec/commons-codec/ivy-1.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for commons-codec#commons-codec;1.2 (resolved by sbt-chain): /home/augusto/.ivy2/cache/commons-codec/commons-codec/ivy-1.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: commons-codec#commons-codec;1.2[0m
 [0m[[0mdebug[0m] [0m	checking commons-codec#commons-codec;1.2 from sbt-chain against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: commons-codec#commons-codec;1.2 from sbt-chain[0m
@@ -766,12 +766,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#completion_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#completion_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#completion_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/completion_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/completion_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#completion_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/completion_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#completion_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/completion_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#completion_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/completion_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#completion_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/completion_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/completion_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#completion_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/completion_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#completion_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#completion_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#completion_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -801,12 +801,12 @@
 [0m[[0mdebug[0m] [0mloadData of jline#jline;0.9.94 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve jline#jline;0.9.94[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: jline#jline;0.9.94 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/jline/jline/ivy-0.9.94.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/jline/jline/ivy-0.9.94.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for jline#jline;0.9.94 (resolved by sbt-chain): /home/moses/.ivy2/cache/jline/jline/ivy-0.9.94.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for jline#jline;0.9.94 (resolved by sbt-chain): /home/augusto/.ivy2/cache/jline/jline/ivy-0.9.94.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: jline#jline;0.9.94[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/jline/jline/ivy-0.9.94.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for jline#jline;0.9.94 (resolved by sbt-chain): /home/moses/.ivy2/cache/jline/jline/ivy-0.9.94.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/jline/jline/ivy-0.9.94.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for jline#jline;0.9.94 (resolved by sbt-chain): /home/augusto/.ivy2/cache/jline/jline/ivy-0.9.94.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: jline#jline;0.9.94[0m
 [0m[[0mdebug[0m] [0m	checking jline#jline;0.9.94 from sbt-chain against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: jline#jline;0.9.94 from sbt-chain[0m
@@ -839,12 +839,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#run_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#run_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#run_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/run_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/run_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#run_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/run_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#run_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/run_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#run_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/run_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#run_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/run_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/run_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#run_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/run_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#run_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#run_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#run_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -877,12 +877,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#task-system_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#task-system_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#task-system_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/task-system_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/task-system_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#task-system_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/task-system_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#task-system_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/task-system_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#task-system_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/task-system_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#task-system_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/task-system_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/task-system_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#task-system_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/task-system_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#task-system_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#task-system_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#task-system_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -891,12 +891,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#tasks_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#tasks_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#tasks_2.9.1;0.11.2 {compile=[default(compile)], test=[test]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/tasks_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/tasks_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#tasks_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/tasks_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#tasks_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/tasks_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#tasks_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/tasks_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#tasks_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/tasks_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/tasks_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#tasks_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/tasks_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#tasks_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#tasks_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#tasks_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -950,12 +950,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#tracking_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#tracking_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#tracking_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/tracking_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/tracking_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#tracking_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/tracking_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#tracking_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/tracking_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#tracking_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/tracking_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#tracking_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/tracking_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/tracking_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#tracking_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/tracking_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#tracking_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#tracking_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#tracking_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -964,12 +964,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#cache_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#cache_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#cache_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/cache_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/cache_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#cache_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/cache_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#cache_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/cache_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#cache_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/cache_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#cache_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/cache_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/cache_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#cache_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/cache_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#cache_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#cache_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#cache_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -1023,12 +1023,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#testing_2.9.1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#testing_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#testing_2.9.1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/testing_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/testing_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#testing_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/testing_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#testing_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/testing_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#testing_2.9.1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/testing_2.9.1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#testing_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/testing_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/testing_2.9.1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#testing_2.9.1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/testing_2.9.1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#testing_2.9.1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#testing_2.9.1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#testing_2.9.1;0.11.2 from typesafe-ivy-releases[0m
@@ -1058,12 +1058,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.testing#test-interface;0.5 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.testing#test-interface;0.5[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.testing#test-interface;0.5 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.testing/test-interface/ivy-0.5.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.testing/test-interface/ivy-0.5.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.testing#test-interface;0.5 (resolved by sbt-chain): /home/moses/.ivy2/cache/org.scala-tools.testing/test-interface/ivy-0.5.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.testing#test-interface;0.5 (resolved by sbt-chain): /home/augusto/.ivy2/cache/org.scala-tools.testing/test-interface/ivy-0.5.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.testing#test-interface;0.5[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.testing/test-interface/ivy-0.5.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.testing#test-interface;0.5 (resolved by sbt-chain): /home/moses/.ivy2/cache/org.scala-tools.testing/test-interface/ivy-0.5.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.testing/test-interface/ivy-0.5.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.testing#test-interface;0.5 (resolved by sbt-chain): /home/augusto/.ivy2/cache/org.scala-tools.testing/test-interface/ivy-0.5.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.testing#test-interface;0.5[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.testing#test-interface;0.5 from sbt-chain against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.testing#test-interface;0.5 from sbt-chain[0m
@@ -1123,12 +1123,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#compiler-interface;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#compiler-interface;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#compiler-interface;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/compiler-interface/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/compiler-interface/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#compiler-interface;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/compiler-interface/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#compiler-interface;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/compiler-interface/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#compiler-interface;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/compiler-interface/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#compiler-interface;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/compiler-interface/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/compiler-interface/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#compiler-interface;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/compiler-interface/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#compiler-interface;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#compiler-interface;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#compiler-interface;0.11.2 from typesafe-ivy-releases[0m
@@ -1164,12 +1164,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#precompiled-2_8_1;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#precompiled-2_8_1;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#precompiled-2_8_1;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#precompiled-2_8_1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#precompiled-2_8_1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#precompiled-2_8_1;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_1/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#precompiled-2_8_1;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_1/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#precompiled-2_8_1;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_1/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#precompiled-2_8_1;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#precompiled-2_8_1;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#precompiled-2_8_1;0.11.2 from typesafe-ivy-releases[0m
@@ -1213,12 +1213,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#precompiled-2_8_0;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#precompiled-2_8_0;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#precompiled-2_8_0;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_0/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_0/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#precompiled-2_8_0;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_0/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#precompiled-2_8_0;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_0/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#precompiled-2_8_0;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_0/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#precompiled-2_8_0;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_0/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_0/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#precompiled-2_8_0;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/precompiled-2_8_0/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#precompiled-2_8_0;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#precompiled-2_8_0;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#precompiled-2_8_0;0.11.2 from typesafe-ivy-releases[0m
@@ -1262,12 +1262,12 @@
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#precompiled-2_9_0;0.11.2 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-tools.sbt#precompiled-2_9_0;0.11.2[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-tools.sbt#precompiled-2_9_0;0.11.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/precompiled-2_9_0/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/precompiled-2_9_0/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#precompiled-2_9_0;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/precompiled-2_9_0/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#precompiled-2_9_0;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/precompiled-2_9_0/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-tools.sbt#precompiled-2_9_0;0.11.2[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/moses/.ivy2/cache/org.scala-tools.sbt/precompiled-2_9_0/ivy-0.11.2.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#precompiled-2_9_0;0.11.2 (resolved by typesafe-ivy-releases): /home/moses/.ivy2/cache/org.scala-tools.sbt/precompiled-2_9_0/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /home/augusto/.ivy2/cache/org.scala-tools.sbt/precompiled-2_9_0/ivy-0.11.2.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-tools.sbt#precompiled-2_9_0;0.11.2 (resolved by typesafe-ivy-releases): /home/augusto/.ivy2/cache/org.scala-tools.sbt/precompiled-2_9_0/ivy-0.11.2.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-tools.sbt#precompiled-2_9_0;0.11.2[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-tools.sbt#precompiled-2_9_0;0.11.2 from typesafe-ivy-releases against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-tools.sbt#precompiled-2_9_0;0.11.2 from typesafe-ivy-releases[0m
@@ -1319,33 +1319,33 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-tools.sbt#sbt_2.9.1;0.11.2->org.scala-lang#scala-library;2.9.1 [compile->master][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0mprovided is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0mprovided is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->runtime][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0mprovided is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->compile][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0mprovided is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->master][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=provided[0m
 [0m[[0mdebug[0m] [0mprovided is loaded and no conf to load.  Skip loading[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=optional[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=optional[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [compile-internal][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=compile-internal[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=compile-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [compile-internal][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=compile-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=compile-internal[0m
 [0m[[0mdebug[0m] [0mcompile-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=compile-internal[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=compile-internal[0m
 [0m[[0mdebug[0m] [0mcompile-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->compile][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=compile-internal[0m
 [0m[[0mdebug[0m] [0mcompile-internal is loaded and no conf to load.  Skip loading[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10->com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 [compile->master(*)][0m
@@ -1370,16 +1370,16 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1->org.scala-lang#scala-library;2.9.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile-internal[0m
 [0m[[0mdebug[0m] [0mcompile-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->master][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=compile-internal[0m
 [0m[[0mdebug[0m] [0mcompile-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=compile-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=compile-internal[0m
 [0m[[0mdebug[0m] [0mcompile-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=compile-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=compile-internal[0m
 [0m[[0mdebug[0m] [0mcompile-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-tools.sbt#sbt_2.9.1;0.11.2 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-tools.sbt#sbt_2.9.1;0.11.2 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#sbt_2.9.1;0.11.2 of rootConf=compile-internal[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-tools.sbt#sbt_2.9.1;0.11.2->org.scala-tools.sbt#main_2.9.1;0.11.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#main_2.9.1;0.11.2 of rootConf=compile-internal[0m
@@ -2125,33 +2125,33 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-tools.sbt#sbt_2.9.1;0.11.2->org.scala-lang#scala-library;2.9.1 [compile->master][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile-internal[0m
 [0m[[0mdebug[0m] [0mcompile-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile-internal[0m
 [0m[[0mdebug[0m] [0mcompile-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->runtime][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile-internal[0m
 [0m[[0mdebug[0m] [0mcompile-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->compile][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile-internal[0m
 [0m[[0mdebug[0m] [0mcompile-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->master][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile-internal[0m
 [0m[[0mdebug[0m] [0mcompile-internal is loaded and no conf to load.  Skip loading[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [runtime-internal][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=runtime-internal[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=runtime-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [runtime-internal][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=runtime-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=runtime-internal[0m
 [0m[[0mdebug[0m] [0mruntime-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=runtime-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=runtime-internal[0m
 [0m[[0mdebug[0m] [0mruntime-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=runtime-internal[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=runtime-internal[0m
 [0m[[0mdebug[0m] [0mruntime-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->compile][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=runtime-internal[0m
 [0m[[0mdebug[0m] [0mruntime-internal is loaded and no conf to load.  Skip loading[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10->com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 [compile->master(*)][0m
@@ -2176,30 +2176,30 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1->org.scala-lang#scala-library;2.9.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime-internal[0m
 [0m[[0mdebug[0m] [0mruntime-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->master][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=runtime-internal[0m
 [0m[[0mdebug[0m] [0mruntime-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=runtime-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=runtime-internal[0m
 [0m[[0mdebug[0m] [0mruntime-internal is loaded and no conf to load.  Skip loading[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [test-internal][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=test-internal[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=test-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [test-internal][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=test-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=test-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=test-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=test-internal[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->compile][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10->com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 [compile->master(*)][0m
@@ -2224,16 +2224,16 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1->org.scala-lang#scala-library;2.9.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 [compile->master][0m
 [0m[[0mdebug[0m] [0mloadData of com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=test-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=test-internal[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-tools.sbt#sbt_2.9.1;0.11.2 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-tools.sbt#sbt_2.9.1;0.11.2 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#sbt_2.9.1;0.11.2 of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-tools.sbt#sbt_2.9.1;0.11.2->org.scala-tools.sbt#main_2.9.1;0.11.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-tools.sbt#main_2.9.1;0.11.2 of rootConf=test-internal[0m
@@ -2979,30 +2979,30 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-tools.sbt#sbt_2.9.1;0.11.2->org.scala-lang#scala-library;2.9.1 [compile->master][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->runtime][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->compile][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c090ac;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-9e1496;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [provided->master][0m
 [0m[[0mdebug[0m] [0mloadData of org.scala-lang#scala-library;2.9.1 of rootConf=test-internal[0m
 [0m[[0mdebug[0m] [0mtest-internal is loaded and no conf to load.  Skip loading[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [plugin][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=plugin[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [plugin][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=plugin[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [sources][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=sources[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [sources][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=sources[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [docs][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=docs[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [docs][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=docs[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c090ac;0.1-SNAPSHOT [pom][0m
-[0m[[0mdebug[0m] [0mloadData of default#default-c090ac;0.1-SNAPSHOT of rootConf=pom[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-9e1496;0.1-SNAPSHOT [pom][0m
+[0m[[0mdebug[0m] [0mloadData of default#default-9e1496;0.1-SNAPSHOT of rootConf=pom[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 40[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 / Number of dependencies = 7[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : org.scala-tools.sbt#sbt_2.9.1;0.11.2 / Number of dependencies = 7[0m
@@ -3235,7 +3235,7 @@
 [0m[[0mdebug[0m] [0morg.scala-lang#scala-compiler;2.9.1 in test-internal: excluding org.scala-lang#scala-compiler;2.9.1!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0morg.scala-lang#scala-compiler;2.9.1 in provided: excluding org.scala-lang#scala-compiler;2.9.1!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0morg.scala-lang#scala-compiler;2.9.1 in compile-internal: excluding org.scala-lang#scala-compiler;2.9.1!scala-compiler.jar[0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/moses/.ivy2/cache/resolved-default-default-c090ac-0.1-SNAPSHOT.xml[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/augusto/.ivy2/cache/resolved-default-default-9e1496-0.1-SNAPSHOT.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10!xsbt-web-plugin_2.9.1.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1!plugin-commons_2.9.1.jar[0m
@@ -3296,7 +3296,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;0.9.94!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-tools.sbt#cache_2.9.1;0.11.2!cache_2.9.1.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-tools.testing#test-interface;0.5!test-interface.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2169ms :: artifacts dl 55ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 10158ms :: artifacts dl 288ms[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 3[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 / Number of dependencies = 7[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 / Number of dependencies = 2[0m
@@ -3307,7 +3307,7 @@
 [0m[[0mdebug[0m] [0mSort done for : com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-lang#scala-library;2.9.1[0m
-[0m[[0mdebug[0m] [0m	report for default#default-c090ac;0.1-SNAPSHOT compile produced in /home/moses/.ivy2/cache/default-default-c090ac-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-9e1496;0.1-SNAPSHOT compile produced in /home/augusto/.ivy2/cache/default-default-9e1496-compile.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 3[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 / Number of dependencies = 7[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 / Number of dependencies = 2[0m
@@ -3318,7 +3318,7 @@
 [0m[[0mdebug[0m] [0mSort done for : com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-lang#scala-library;2.9.1[0m
-[0m[[0mdebug[0m] [0m	report for default#default-c090ac;0.1-SNAPSHOT runtime produced in /home/moses/.ivy2/cache/default-default-c090ac-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-9e1496;0.1-SNAPSHOT runtime produced in /home/augusto/.ivy2/cache/default-default-9e1496-runtime.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 3[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 / Number of dependencies = 7[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 / Number of dependencies = 2[0m
@@ -3329,7 +3329,7 @@
 [0m[[0mdebug[0m] [0mSort done for : com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-lang#scala-library;2.9.1[0m
-[0m[[0mdebug[0m] [0m	report for default#default-c090ac;0.1-SNAPSHOT test produced in /home/moses/.ivy2/cache/default-default-c090ac-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-9e1496;0.1-SNAPSHOT test produced in /home/augusto/.ivy2/cache/default-default-9e1496-test.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 38[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : org.scala-tools.sbt#sbt_2.9.1;0.11.2 / Number of dependencies = 7[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : org.scala-tools.sbt#main_2.9.1;0.11.2 / Number of dependencies = 11[0m
@@ -3543,9 +3543,9 @@
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-tools.sbt#precompiled-2_8_1;0.11.2[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-tools.sbt#precompiled-2_8_0;0.11.2[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-tools.sbt#precompiled-2_9_0;0.11.2[0m
-[0m[[0mdebug[0m] [0m	report for default#default-c090ac;0.1-SNAPSHOT provided produced in /home/moses/.ivy2/cache/default-default-c090ac-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-9e1496;0.1-SNAPSHOT provided produced in /home/augusto/.ivy2/cache/default-default-9e1496-provided.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 0[0m
-[0m[[0mdebug[0m] [0m	report for default#default-c090ac;0.1-SNAPSHOT optional produced in /home/moses/.ivy2/cache/default-default-c090ac-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-9e1496;0.1-SNAPSHOT optional produced in /home/augusto/.ivy2/cache/default-default-9e1496-optional.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 40[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 / Number of dependencies = 7[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : org.scala-tools.sbt#sbt_2.9.1;0.11.2 / Number of dependencies = 7[0m
@@ -3768,7 +3768,7 @@
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-tools.sbt#precompiled-2_8_1;0.11.2[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-tools.sbt#precompiled-2_8_0;0.11.2[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-tools.sbt#precompiled-2_9_0;0.11.2[0m
-[0m[[0mdebug[0m] [0m	report for default#default-c090ac;0.1-SNAPSHOT compile-internal produced in /home/moses/.ivy2/cache/default-default-c090ac-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-9e1496;0.1-SNAPSHOT compile-internal produced in /home/augusto/.ivy2/cache/default-default-9e1496-compile-internal.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 3[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 / Number of dependencies = 7[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 / Number of dependencies = 2[0m
@@ -3779,7 +3779,7 @@
 [0m[[0mdebug[0m] [0mSort done for : com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-lang#scala-library;2.9.1[0m
-[0m[[0mdebug[0m] [0m	report for default#default-c090ac;0.1-SNAPSHOT runtime-internal produced in /home/moses/.ivy2/cache/default-default-c090ac-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-9e1496;0.1-SNAPSHOT runtime-internal produced in /home/augusto/.ivy2/cache/default-default-9e1496-runtime-internal.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 40[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 / Number of dependencies = 7[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : org.scala-tools.sbt#sbt_2.9.1;0.11.2 / Number of dependencies = 7[0m
@@ -4002,14 +4002,14 @@
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-tools.sbt#precompiled-2_8_1;0.11.2[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-tools.sbt#precompiled-2_8_0;0.11.2[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-tools.sbt#precompiled-2_9_0;0.11.2[0m
-[0m[[0mdebug[0m] [0m	report for default#default-c090ac;0.1-SNAPSHOT test-internal produced in /home/moses/.ivy2/cache/default-default-c090ac-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-9e1496;0.1-SNAPSHOT test-internal produced in /home/augusto/.ivy2/cache/default-default-9e1496-test-internal.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 0[0m
-[0m[[0mdebug[0m] [0m	report for default#default-c090ac;0.1-SNAPSHOT plugin produced in /home/moses/.ivy2/cache/default-default-c090ac-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-9e1496;0.1-SNAPSHOT plugin produced in /home/augusto/.ivy2/cache/default-default-9e1496-plugin.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 0[0m
-[0m[[0mdebug[0m] [0m	report for default#default-c090ac;0.1-SNAPSHOT sources produced in /home/moses/.ivy2/cache/default-default-c090ac-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-9e1496;0.1-SNAPSHOT sources produced in /home/augusto/.ivy2/cache/default-default-9e1496-sources.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 0[0m
-[0m[[0mdebug[0m] [0m	report for default#default-c090ac;0.1-SNAPSHOT docs produced in /home/moses/.ivy2/cache/default-default-c090ac-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-9e1496;0.1-SNAPSHOT docs produced in /home/augusto/.ivy2/cache/default-default-9e1496-docs.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 0[0m
-[0m[[0mdebug[0m] [0m	report for default#default-c090ac;0.1-SNAPSHOT pom produced in /home/moses/.ivy2/cache/default-default-c090ac-pom.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2169ms resolve - 55ms download)[0m
+[0m[[0mdebug[0m] [0m	report for default#default-9e1496;0.1-SNAPSHOT pom produced in /home/augusto/.ivy2/cache/default-default-9e1496-pom.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (10158ms resolve - 288ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
