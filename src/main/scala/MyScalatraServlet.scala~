@@ -5,7 +5,7 @@ class MyScalatraServlet extends ScalatraServlet with ScalateSupport {
 
   get("/") {
     
-    templateEngine.layout("/WEB-INF/layouts/default.scaml", Map("content" -> "content"))
+    templateEngine.layout("/WEB-INF/layouts/default.scaml")
   }
 
   get("/play") {

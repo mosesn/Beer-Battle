@@ -4,8 +4,8 @@ import scalate.ScalateSupport
 class MyScalatraServlet extends ScalatraServlet with ScalateSupport {
 
   get("/") {
-    
-    templateEngine.layout("/WEB-INF/layouts/default.scaml", Map("content" -> "content"))
+    contentType= "text/html"
+    templateEngine.layout("/WEB-INF/layouts/default.scaml")
   }
 
   get("/play") {

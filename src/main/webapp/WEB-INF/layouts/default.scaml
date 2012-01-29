@@ -1,13 +1,17 @@
--@ val title: String
--@ val headline: String = title
--@ val body: String
-
 !!!
 %html
-  <link rel="stylesheet" type="text/css" href="static/style.css" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
   %head
-    %title= title
+    %title = "BeerBattle - Welcome"
   %body
-    #content
-      %h1= headline
-      != body
+    %div(id="logo")
+      %img(src="img/bb_1_home_BEERBATTLE.png" alt="BeerBattle")/
+    %div(id="play_button")
+      %a(href="...")
+        %img(src="img/bb_1_home_PLAY.png" alt="Play")/
+    %div(id="signout_button")
+      %a(href="...")
+        %p
+          Sign Out 
+      
+    
