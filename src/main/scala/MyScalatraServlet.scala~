@@ -127,6 +127,11 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     contentType = "text/html"
     templateEngine.layout("/WEB-INF/layouts/checkin.scaml")
   }
+  
+  get("/jointeam"){
+    contentType = "text/html"
+    templateEngine.layout("/WEB-INF/layouts/jointeam.scaml")
+  }
 
   get("/createteam"){
     contentType = "text/html"
