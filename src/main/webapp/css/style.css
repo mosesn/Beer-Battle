@@ -60,6 +60,15 @@ img.input {
   padding: 0 0 0 0;
 }
 
+#signup {
+  margin: 10% 0 0 30%;
+  padding: 0 0 0 0;
+}
+
+#submit {
+  margin: 9% 0 0 30%;
+}
+
 /* properties for input boxes */
 input, input:focus {
   width: 50%;
