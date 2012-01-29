@@ -36,7 +36,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     mongoDB("user").insert(newObj)
     session("number") = params("number")
     session("pw") = pw
-    //TODO: Redirect where?
+    redirect("/selectbar")
   }
 
   def verifyInput(map: Map[String, String]) {
@@ -82,7 +82,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     validate(result)
     session("number") = number
     session("pw") = pw
-    //TODO: Redirect where?
+    redirect("/selectbar")
   }
 
   def validate(result: Option[DBObject]): Unit = {
@@ -113,15 +113,10 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     templateEngine.layout("/WEB-INF/layouts/login.scaml", map)
   }
 
-  get("/checkin"){
-    contentType = "text/html"
-    templateEngine.layout("/WEB-INF/layouts/checkin.scaml",
-                          Map("bars" -> mongoDB("bar").find()))
-  }
-  
   get("/selectbar") {
     contentType = "text/html"
-    templateEngine.layout("/WEB-INF/layouts/selectbar.scaml")
+    templateEngine.layout("/WEB-INF/layouts/selectbar.scaml",
+                          Map("bars" -> mongoDB("bar").find()))
   }
 
   get("/jointeam"){
