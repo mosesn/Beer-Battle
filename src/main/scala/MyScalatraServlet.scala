@@ -4,13 +4,8 @@ import scalate.ScalateSupport
 class MyScalatraServlet extends ScalatraServlet with ScalateSupport {
 
   get("/") {
-    <html>
-      <body>
-        <a href="play">PLAY</a>
-        Say <a href="hello-scalate">hello no Scalate</a>.
-      </body>
-    </html>
-//      templateEngine.layout(path, Map("content" -> "content"))
+    
+    templateEngine.layout("/WEB-INF/layouts/default.scaml", Map("content" -> "content"))
   }
 
   get("/play") {
@@ -19,10 +14,10 @@ class MyScalatraServlet extends ScalatraServlet with ScalateSupport {
   }
 
   post("/signup") {
-    println(request("fname"))
-    println(request("lname"))
-    println(request("number"))
-    println(request("password"))
+    println(params("fname"))
+    println(params("lname"))
+    println(params("number"))
+    println(params("password"))
   }
 
   get("/signup") {
