@@ -3,6 +3,7 @@ import scalate.ScalateSupport
 import com.mongodb.casbah.Imports._
 import java.security.MessageDigest
 import javax.servlet.http.HttpSession
+import scala.util.matching.Regex
 
 class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with ScalateSupport {
 
@@ -70,11 +71,11 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   def stripNumber(str: String): String = {
-    str filter (isNumber(_))
-  }
-
-  def isNumber(char: Char): Boolean = {
-    true
+    var tmp: String = ""
+    for (x <- new Regex("""\d""").findAllIn(str)) {
+      tmp += x
+    }
+    tmp
   }
 
   def hash(str: String): String = {
