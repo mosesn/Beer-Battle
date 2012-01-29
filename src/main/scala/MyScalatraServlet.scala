@@ -35,7 +35,15 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   post("/signup") {
     val fname = params("fname")
     val lname = params("lname")
+    if (fname.length == 0 || lname.length == 0) {
+      flash += ("error" -> "Trivial name.")
+      redirect("/signup")
+    }
     val number = params("number")
+    if (isInvalidNumber(number)) {
+      flash += ("error" -> "Bad phone number.")
+      redirect("/signup")
+    }
     val pass1 = params("password")
     val pass2 = params("password2")
     if (!(pass1 equals pass2)) {
@@ -56,6 +64,19 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     }
   }
 
+  def isInvalidNumber(str: String): Boolean = {
+    val len = stripNumber(str).length
+    len != 10 && len != 11
+  }
+
+  def stripNumber(str: String): String = {
+    str filter (isNumber(_))
+  }
+
+  def isNumber(char: Char): Boolean = {
+    true
+  }
+
   def hash(str: String): String = {
     val md = MessageDigest.getInstance("SHA")
     val salt = "g8:6U&dS(c"
@@ -73,7 +94,6 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     result match {
       case Some(s) => {
           //TODO: Redirect where?
-          //TODO: log into session
           session("number") = number
           session("pw") = pw
           2
@@ -98,11 +118,8 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
   get("/login") {
     contentType = "text/html"
-    if (flash.contains("error")) {
-      templateEngine.layout("/WEB-INF/layouts/login.scaml")
-    } else {
-      templateEngine.layout("/WEB-INF/layouts/login.scaml")
-    }
+    val map = Map("error" -> (flash.contains("error")))
+    templateEngine.layout("/WEB-INF/layouts/login.scaml", map)
   }
 
   get("/checkin"){
