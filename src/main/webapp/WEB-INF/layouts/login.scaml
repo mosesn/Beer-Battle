@@ -6,7 +6,7 @@
     %div(id="logo")
       %img(src="img/bb_2_LogIn_LOGIN.png" alt="Log In")
     %div(id="login")
-      %form
+      %form(action="/login" method="post")
         %img(class="input" src="img/bb_2_LogIn_PHONE.png" alt="Phone Number") 
         %br/
         %input(type="text" name="phone")/ 
@@ -15,6 +15,7 @@
         %br/
         %input(type="password" name="password")/ 
         %br/
+        %input(class="input" type="submit" value="Submit")/
     %div(id="newaccount")
       %a(href="/signup")
         %img(src="img/bb_2_LogIn_CREATENEWACCOUNT.png" alt="Create New Account")
