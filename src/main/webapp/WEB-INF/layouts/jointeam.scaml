@@ -7,10 +7,13 @@
   %body
     %div(id="logo")
       %img(src="img/bb_6_CreateYourTeam_JOINATEAM.png" alt="Join A Team")/
-    %div
-      %ul
-        -for(x <- teams)
-          %li #{x}
+    %form(action="/jointeam" method="post")
+      -for(x <- teams)
+        %input(type="radio" name="team")
+        #{x}
+        -if(x.contains(pw)
+          %input(type="password" name="password")password:
+      %input(type="submit" value="Submit")/          
     %div(id="createteam")
       %a(href="/createteam")
         %img(src="img/bb_6_CreateYourTeam_CREATETEAM.png" alt="Create Team")/    

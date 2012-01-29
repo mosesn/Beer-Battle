@@ -1,0 +1,16 @@
+-attributes("layout") = ""
+-import com.mongodb.casbah.MongoCursor
+-@ val bars: MongoCursor
+%html
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
+  %body
+    %div(id="logo")
+      %img(src="img/bb_5_SelectYourBattleBar_SELECTYOURBATTLEBAR.png" alt="Select Your Battle Bar")/
+    %div
+      %form(action="/selectbar" method="post")
+        -for(x <- bars)
+          %input(type="radio" name="bars")
+          #{x}
+        %input(type="submit" value="Submit")/
+        
