@@ -9,6 +9,10 @@ body {
 }
 
 /* TYPOGRAPHY */
+p {
+  font-size: 20px;
+  color: red;
+}
 
 #highlight a:link {
 background-color:black;

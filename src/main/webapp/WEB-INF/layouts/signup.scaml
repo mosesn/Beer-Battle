@@ -7,6 +7,10 @@
   %body
     %div(id="signup")
       %form(action="/signup" method="post")
+        -if(error)
+          %p
+            #{myType}
+          %br/
         %img(class="input" src="img/bb_2_SignUp_FIRSTNAME.png" alt="First Name")
         %br/
         %input(type="text" name="fname")/
@@ -29,5 +33,4 @@
         %br/
         %div(id="submit")
           %input(type="submit" value="Submit")/
-        -if(error)
-          #{myType}
+        
