@@ -35,6 +35,11 @@ class MyScalatraServlet extends ScalatraServlet with ScalateSupport {
     templateEngine.layout("/WEB-INF/layouts/checkin.scaml")
   }
   
+  get("/createteam"){
+    contentType = "text/html"
+    templateEngine.layout("/WEB-INF/layouts/createteam.scaml")
+  }
+  
   notFound {
     // Try to render a ScalateTemplate if no route matched
     findTemplate(requestPath) map { path =>
