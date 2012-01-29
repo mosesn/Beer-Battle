@@ -119,31 +119,53 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   post("/selectbar") {
-    session("bar") = params("barstring").asInstanceOf[String]
-    redirect("/jointeam")
+      session("bar") = params("barstring").asInstanceOf[String]
+      redirect("/jointeam")
   }
 
   get("/selectbar") {
-    contentType = "text/html"
-    templateEngine.layout("/WEB-INF/layouts/selectbar.scaml",
-                          Map("bars" -> mongoDB("bar").find()))
+    if (auth(session)) {
+      contentType = "text/html"
+      templateEngine.layout("/WEB-INF/layouts/selectbar.scaml",
+                            Map("bars" -> mongoDB("bar").find()))
+    }
+    else {
+      redirect("/")
+    }
   }
 
   post("/jointeam") {
     val coll = mongoDB("team")
-    coll.update(MongoDBObject("number" -> params("number")),
-                MongoDBObject("$inc" -> MongoDBObject("size" -> 1), "$push" ->
-                              MongoDBObject("members" -> session("number"))))
+    val pw = params("password")
+    if (pw equals "") {
+      coll.update(MongoDBObject("number" -> params("number")),
+                  MongoDBObject("$inc" -> MongoDBObject("size" -> 1), "$push" ->
+                                MongoDBObject("members" -> session("number"))))
+    }
+    else {
+      if (coll.findOne(MongoDBObject("pw" -> hash(pw))).isDefined) {
+        coll.update(MongoDBObject("number" -> params("number")),
+                    MongoDBObject("$inc" -> MongoDBObject("size" -> 1), "$push" ->
+                                  MongoDBObject("members" -> session("number"))))
+      }
+      else {
+        flash += ("error" -> "Wrong password.")
+        redirect("/jointeam")
+      }
+    }
   }
 
   get("/jointeam"){
-    contentType = "text/html"
-    val str = session("bar")
-    println(str)
-    val tmp = mongoDB("team").find(
-      MongoDBObject("bar" -> str, "size" -> MongoDBObject("$lt", size)))
-    templateEngine.layout("/WEB-INF/layouts/jointeam.scaml",
-                          Map("teams" -> tmp))
+    if (auth(session)) {
+      contentType = "text/html"
+      val str = session("bar")
+      val tmp = mongoDB("team").find(MongoDBObject("bar" -> str, "size" -> MongoDBObject("$lt" -> 2)))
+      templateEngine.layout("/WEB-INF/layouts/jointeam.scaml",
+                            Map("teams" -> tmp))
+    }
+    else {
+      redirect("/")
+    }
   }
 
   post("/createteam") {
@@ -164,8 +186,13 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   get("/createteam"){
-    contentType = "text/html"
-    templateEngine.layout("/WEB-INF/layouts/createteam.scaml")
+    if (auth(session)) {
+      contentType = "text/html"
+      templateEngine.layout("/WEB-INF/layouts/createteam.scaml")
+    }
+    else {
+      redirect("/")
+    }
   }
 
   notFound {
