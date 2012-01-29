@@ -1,6 +1,7 @@
 import org.scalatra._
 import scalate.ScalateSupport
 import com.mongodb.casbah.Imports._
+import java.security.MessageDigest
 
 class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with ScalateSupport {
 
@@ -29,10 +30,16 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
       val newObj = MongoDBObject("fname" -> fname,
                                "lname" -> lname,
                                "number" -> number,
-                               "pw" -> pass1)
+                               "pw" -> hash(pass1))
       mongoColl.insert(newObj)
       //TODO: Redirect where?
     }
+  }
+
+  def hash(str: String): String = {
+    val md = MessageDigest.getInstance("SHA")
+    val salt = "g8:6U&dS(c"
+    new String(md.digest(str.getBytes ++ salt.getBytes), "ASCII")
   }
 
   post("/login") {
@@ -45,7 +52,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
                                                  "pw" -> pass))
     result match {
       case Some(s) => {
-        if (s("pw") equals pass) {
+        if (s("pw") equals hash(pass)) {
           //TODO: Redirect where?
           //TODO: log into session
           2
