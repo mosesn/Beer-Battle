@@ -1,3 +1,4 @@
+-@ val logged_in: Boolean
 !!!
 %html
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
@@ -6,11 +7,14 @@
   %body
     %div(id="logo")
       %img(src="img/bb_1_home_BEERBATTLE.png" alt="BeerBattle")/
-    %div(id="play_button")
-      %a(href="...")
-        %img(src="img/bb_1_home_PLAY.png" alt="Play")/
-    %div(id = "highlight")
-      %a(href="...")
-        Sign Out    
-        
-    
+    - if (logged_in)
+      %div(id="play_button")
+        %a(href="/selectbar")
+          %img(src="img/bb_1_home_PLAY.png" alt="Play")/
+      %div(id = "highlight")
+        %a(href="/signout")
+          Sign Out
+    - else
+      %div(id="play_button")
+        %a(href="/login")
+          %img(src="img/bb_1_home_PLAY.png" alt="Play")/

@@ -8,9 +8,14 @@ import scala.util.matching.Regex
 class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with ScalateSupport {
 
   get("/") {
-    contentType= "text/html"
+    contentType = "text/html"
     val map = Map("logged_in" -> auth(session))
     templateEngine.layout("/WEB-INF/layouts/default.scaml", map)
+  }
+
+  get("/signout") {
+    contentType = "text/html"
+    session.invalidate
   }
 
   def auth(session: HttpSession): Boolean = {
