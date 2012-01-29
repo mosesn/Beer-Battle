@@ -1,6 +1,6 @@
 -attributes("layout") = ""
--@ val error: Boolean
--@ val myType: String
+-@ val error: Boolean = false
+-@ val myType: String = ""
 %html
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
@@ -29,3 +29,5 @@
         %br/
         %div(id="submit")
           %input(type="submit" value="Submit")/
+        -if(error)
+          #{myType}
