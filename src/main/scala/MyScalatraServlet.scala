@@ -119,7 +119,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   post("/selectbar") {
-    session("bar") = params("bar")
+    session("bar") = params("barstring").asInstanceOf[String]
     redirect("/jointeam")
   }
 
@@ -138,8 +138,10 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
   get("/jointeam"){
     contentType = "text/html"
+    val str = session("bar")
+    println(str)
     val tmp = mongoDB("team").find(
-      MongoDBObject("bar" -> session("bar").asInstanceOf[ObjectId]))
+      MongoDBObject("bar" -> str, "size" -> MongoDBObject("$lt", size)))
     templateEngine.layout("/WEB-INF/layouts/jointeam.scaml",
                           Map("teams" -> tmp))
   }
@@ -150,7 +152,8 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
     if (pw equals "") {
       mongoColl.insert(MongoDBObject("size" -> 1,
-                                     "members" -> Array(session("number"))))
+                                     "members" -> Array(session("number")),
+                                     "bar" -> session("bar")))
     }
     else {
       mongoColl.insert(MongoDBObject("size" -> 1,
