@@ -1,25 +1,26 @@
 /** CHANGE COLORS HERE **/
 
 body, .toolbar, #jqt ul, #jqt ul.individual li,#jqt ul li a.active,#jqt .info,#jqt #plastic,#tabbar, .s-scrollpane {
-    background-color: #519d00; /* main background color */
+    background-color: black; /* main background color */
 }
 #jqt h1, #jqt h2, #jqt ul li a,#jqt .whiteButton, #jqt .button.active, #jqt .cancel.active, #jqt .add.active, #jqt .back.active,#jqt ul li small,#tabbar .badge,#jqt .info,#jqt .info a  {
-    color: #2e6c00; /* main text color */
+    color: gray; /* main text color */
 }
 
 /** END **/
 
 body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-scrollwrapper {
-    background-image: url(/img/bg_noise.png);
+    background-image: url(../img/bg_noise.png);
 }
 #jqt > * {
-    background: rgba(255,255,255,0.9);
+    background: rgba(0,255,255,0.9);
 }
 #jqt h1, #jqt h2, #jqt ul li a {
     font: bold 18px "Helvetica Neue", Helvetica;
     text-shadow: white 0 1px 0;
     margin: 10px 20px 5px;
 }
+
 /* @group Toolbar */
 #jqt .toolbar {
     -webkit-box-sizing: border-box;
@@ -81,7 +82,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     text-shadow: none;
 }
 #jqt .blueButton {
-    -webkit-border-image: url(/img/blueButton.png) 0 5 0 5;
+    -webkit-border-image: url(../img/blueButton.png) 0 5 0 5;
     border-width: 0 5px;
 }
 #jqt .back {
@@ -91,7 +92,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     padding-left: 11px;
     border-width: 0 0 0 9px;
     border-radius: 0 8px 8px 0;
-    -webkit-mask-image: url(/img/mask_button_back.svg);
+    -webkit-mask-image: url(../img/mask_button_back.svg);
 }
 #jqt .leftButton, #jqt .cancel {
     left: 6px;
@@ -194,7 +195,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     background-image: none;
 }
 #jqt ul li.arrow {
-    background-image: url(/img/chevron.svg);
+    background-image: url(../img/chevron.svg);
     background-position: right center !important;
     background-repeat: no-repeat !important;
 }
@@ -204,7 +205,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
 }
 
 #jqt ul li.forward {
-    background-image: url(/img/chevron_circle.svg);
+    background-image: url(../img/chevron_circle.svg);
     background-position: right center;
     background-repeat: no-repeat;
 }
@@ -220,7 +221,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 #jqt ul li a.active.loading {
-    background-image: url(/img/loading.gif);
+    background-image: url(../img/loading.gif);
     background-position: 95% center;
     background-repeat: no-repeat;
 }
@@ -323,7 +324,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
 }
 #jqt ul li select {
     text-indent: 0px;
-    background: transparent url(/img/chevron.svg) no-repeat right center;
+    background: transparent url(../img/chevron.svg) no-repeat right center;
     -webkit-appearance: textfield;
     margin-left: -6px;
     width: 104%;
@@ -422,7 +423,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-transition: left .15s;
     background-color: transparent;
-    background: #fff url(/img/on_off.png) 0 0 no-repeat;
+    background: #fff url(../img/on_off.png) 0 0 no-repeat;
     border: 0;
     height: 27px;
     left: -55px;
@@ -463,7 +464,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
 }
 #jqt ul.edgetoedge li.arrow {
     background-color: #404142 !important;
-    background-image: url(/img/chevron.svg);
+    background-image: url(../img/chevron.svg);
     background-position: right center;
     background-repeat: no-repeat;
 }
@@ -504,7 +505,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,0)), to(rgba(255,255,255,0.5)));
 }
 #jqt ul.plastic li a.active.loading {
-    background-image: url(/img/loading.gif);
+    background-image: url(../img/loading.gif);
     background-position: 95% center;
     background-repeat: no-repeat;
 }
@@ -516,12 +517,12 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     text-transform: uppercase;
 }
 #jqt ul.plastic li.arrow {
-    background-image: url(/img/chevron_dark.svg);
+    background-image: url(../img/chevron_dark.svg);
     background-position: right center;
     background-repeat: no-repeat;
 }
 #jqt ul.plastic li.forward {
-    background-image: url(/img/chevron_circle.svg);
+    background-image: url(../img/chevron_circle.svg);
     background-position: right center;
     background-repeat: no-repeat;
 }
@@ -569,10 +570,10 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     font-weight: bold;
 }
 #jqt ul.metal li.arrow {
-    background-image: url(/img/chevron.svg);
+    background-image: url(../img/chevron.svg);
     background-position: right center;
     background-repeat: no-repeat;
-    background-image: url(/img/chevron.svg), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(238,238,238,1)), to(rgba(156,158,160,1)));
+    background-image: url(../img/chevron.svg), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(238,238,238,1)), to(rgba(156,158,160,1)));
     background-repeat: no-repeat;
     background-position: right center;
 }
