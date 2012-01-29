@@ -1,6 +1,7 @@
 import org.scalatra._
 import scalate.ScalateSupport
 import com.mongodb.casbah.Imports._
+import org.scala_tools.time.Imports._
 import java.security.MessageDigest
 import javax.servlet.http.HttpSession
 import scala.util.matching.Regex
@@ -42,6 +43,43 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     session("number") = params("number")
     session("pw") = pw
     redirect("/selectbar")
+  }
+
+  post("/finish") {
+    auth(session)
+    if (inGame(session)) {
+      finishGame(session)
+    }
+  }
+
+  def inGame(session: HttpSession): Boolean = {
+    mongoDB("fight").findOne(MongoDBObject("member" -> session("number"))).isDefined
+  }
+
+  def finishGame(session: HttpSession) {
+    mongoDB("fight").remove(MongoDBObject("member" -> session("number")))
+    newFight(session("bar").asInstanceOf[String])
+  }
+
+  def newFight(bar: String) {
+    val iter = mongoDB("queue").find(MongoDBObject("bar" -> bar)).sort(MongoDBObject("time" -> 1)).limit(2)
+    if (iter.hasNext){
+      val first = iter.next()
+      if (iter.hasNext) {
+        val second = iter.next()
+        engagePlayers(first, second)
+      }
+    }
+  }
+
+  def engagePlayers(first: DBObject, second: DBObject) {
+    mongoDB("queue").remove(first)
+    mongoDB("queue").remove(second)
+    val newObj = MongoDBObject("members" -> (first.get("members").asInstanceOf[Array[Number]] ++ second.get("members").asInstanceOf[Array[Number]]),
+                               "team1" -> first.get("members"),
+                               "team2" -> second.get("members"),
+                               "bar" -> first.get("bar"))
+    mongoDB("fight").insert(newObj)
   }
 
   def verifyInput(map: Map[String, String]) {
@@ -134,34 +172,76 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     }
   }
 
+  get("/queue") {
+    contentType = "text/html"
+    val coll = mongoDB("team")
+    val opt = coll.findOne(MongoDBObject("size" -> 2, "members" -> session("number")))
+    if (busyBar(session)) {
+      opt match {
+        case Some(x) => {
+          x.removeKey("_id")
+          x.put("time", DateTime.now)
+          mongoDB("queue").insert(x)
+        }
+        case None => redirect("/createteam")
+      }
+    }
+    else {
+      opt match {
+        case Some(x) => {
+          x.removeKey("_id")
+          val otherUser = getNextUser(session("bar").asInstanceOf[String])
+          if (otherUser.isDefined) {
+            engagePlayers(x, otherUser.get)
+          }
+        }
+        case None => redirect("/createteam")
+      }
+    }
+    templateEngine.layout("/WEB-INF/layouts/queue.scaml")
+  }
+
+  def getNextUser(bar: String): Option[DBObject] = {
+    null
+  }
+
+  def busyBar(session: HttpSession): Boolean = {
+    val barOccupancy = mongoDB("bar").findOne(MongoDBObject("bar" -> session("bar"))).get.get("size")
+    mongoDB("fight").find(MongoDBObject("bar" -> session("bar"))).length == barOccupancy
+  }
+
   post("/jointeam") {
     val coll = mongoDB("team")
     val pw = params("password")
     if (pw equals "") {
+      coll.remove(MongoDBObject("members" -> session("number")))
       coll.update(MongoDBObject("number" -> params("number")),
                   MongoDBObject("$inc" -> MongoDBObject("size" -> 1), "$push" ->
                                 MongoDBObject("members" -> session("number"))))
     }
     else {
       if (coll.findOne(MongoDBObject("pw" -> hash(pw))).isDefined) {
+        coll.remove(MongoDBObject("members" -> session("number")))
         coll.update(MongoDBObject("number" -> params("number")),
-                    MongoDBObject("$inc" -> MongoDBObject("size" -> 1), "$push" ->
-                                  MongoDBObject("members" -> session("number"))))
+                    MongoDBObject("$inc" -> MongoDBObject("size" -> 1),
+                                  "$push" -> MongoDBObject("members" -> session("number"))))
       }
       else {
         flash += ("error" -> "Wrong password.")
         redirect("/jointeam")
       }
     }
+    //add to queue
+    redirect("/queue")
   }
 
   get("/jointeam"){
     if (auth(session)) {
       contentType = "text/html"
-      val str = session("bar")
-      val tmp = mongoDB("team").find(MongoDBObject("bar" -> str, "size" -> MongoDBObject("$lt" -> 2)))
+      val tmp = mongoDB("team").find(MongoDBObject("bar" -> session("bar"), "size" -> MongoDBObject("$lt" -> 2),
+                                                 "members" -> MongoDBObject("$ne" -> session("number"))))
       templateEngine.layout("/WEB-INF/layouts/jointeam.scaml",
-                            Map("teams" -> tmp))
+                            Map("teams" -> tmp, "error" -> flash.getOrElse("error", "")))
     }
     else {
       redirect("/")
@@ -183,6 +263,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
                                      "pw" -> pw,
                                      "bar" -> session("bar")))
     }
+    redirect("/jointeam")
   }
 
   get("/createteam"){
@@ -204,5 +285,3 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     } orElse serveStaticResource() getOrElse resourceNotFound()
   }
 }
-
-case class User(phone: Int, fname: String, lname: String)
