@@ -1,4 +1,6 @@
 -attributes("layout") = ""
+-@ val error: Boolean
+-@ val myType: String
 %html
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
@@ -7,7 +9,7 @@
       %form(action="/signup" method="post")
         %img(class="input" src="img/bb_2_SignUp_FIRSTNAME.png" alt="First Name")
         %br/
-        %input(type="text" name="fname")/ 
+        %input(type="text" name="fname")/
         %br/
         %img(class="input" src="img/bb_2_SignUp_LASTNAME.png" alt="First Name")
         %br/
