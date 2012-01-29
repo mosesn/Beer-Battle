@@ -8,9 +8,14 @@ import scala.util.matching.Regex
 class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with ScalateSupport {
 
   get("/") {
-    contentType= "text/html"
+    contentType = "text/html"
     val map = Map("logged_in" -> auth(session))
     templateEngine.layout("/WEB-INF/layouts/default.scaml", map)
+  }
+
+  get("/signout") {
+    contentType = "text/html"
+    session.invalidate
   }
 
   def auth(session: HttpSession): Boolean = {
@@ -113,18 +118,49 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     templateEngine.layout("/WEB-INF/layouts/login.scaml", map)
   }
 
+  post("/selectbar") {
+    session("bar") = params("barstring").asInstanceOf[String]
+    redirect("/jointeam")
+  }
+
   get("/selectbar") {
     contentType = "text/html"
     templateEngine.layout("/WEB-INF/layouts/selectbar.scaml",
                           Map("bars" -> mongoDB("bar").find()))
   }
 
+  post("/jointeam") {
+    val coll = mongoDB("team")
+    coll.update(MongoDBObject("number" -> params("number")),
+                MongoDBObject("$inc" -> MongoDBObject("size" -> 1), "$push" ->
+                              MongoDBObject("members" -> session("number"))))
+  }
+
   get("/jointeam"){
     contentType = "text/html"
+    val str = session("bar")
+    println(str)
     val tmp = mongoDB("team").find(
-      MongoDBObject("bar" -> session("bar").asInstanceOf[ObjectId]))
+      MongoDBObject("bar" -> str, "size" -> MongoDBObject("$lt", size)))
     templateEngine.layout("/WEB-INF/layouts/jointeam.scaml",
                           Map("teams" -> tmp))
+  }
+
+  post("/createteam") {
+    val pw = params("pw")
+    val mongoColl = mongoDB("team")
+
+    if (pw equals "") {
+      mongoColl.insert(MongoDBObject("size" -> 1,
+                                     "members" -> Array(session("number")),
+                                     "bar" -> session("bar")))
+    }
+    else {
+      mongoColl.insert(MongoDBObject("size" -> 1,
+                                     "members" -> Array(session("number")),
+                                     "pw" -> pw,
+                                     "bar" -> session("bar")))
+    }
   }
 
   get("/createteam"){

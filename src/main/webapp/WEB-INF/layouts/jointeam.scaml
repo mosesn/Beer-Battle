@@ -2,19 +2,27 @@
 -import com.mongodb.casbah.MongoCursor
 -@ val teams: MongoCursor
 %html
+  <!-- include JQuery through Google API => Always have the latest version -->
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript"> google.load("jquery", "1.3.2"); </script>
+
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
   %body
     %div(id="logo")
       %img(src="img/bb_6_CreateYourTeam_JOINATEAM.png" alt="Join A Team")/
     %form(action="/jointeam" method="post")
-      -for(x <- teams)
-        %input(type="radio" name="team")
-        #{x}
-        -if(x.contains(pw)
-          %input(type="password" name="password")password:
-      %input(type="submit" value="Submit")/          
+      -for((x, index) <- teams.zipWithIndex)
+        - val what = x.get("number")
+        %input(type="radio" name="team" id="#{index}" rel="#{what}")
+        -if(x.containsKey("pw"))
+          %input(type="password" name="password")
+            pw
+      %script
+        $("form input[type='radio']").click(function() {$("#clever").attr("value", $(this).attr("rel"));
+        });
+      %input(type="hidden" name="number" value="good" id="clever")/
+      %input(type="submit" value="Submit")/
     %div(id="createteam")
       %a(href="/createteam")
-        %img(src="img/bb_6_CreateYourTeam_CREATETEAM.png" alt="Create Team")/    
-    
+        %img(src="img/bb_6_CreateYourTeam_CREATETEAM.png" alt="Create Team")/

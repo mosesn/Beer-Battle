@@ -1,7 +1,11 @@
--attributes("layout") = ""
--import com.mongodb.casbah.MongoCursor
+- attributes("layout") = ""
+- import com.mongodb.casbah.MongoCursor
 -@ val bars: MongoCursor
 %html
+  <!-- include JQuery through Google API => Always have the latest version -->
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript"> google.load("jquery", "1.3.2"); </script>
+
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
   %body
@@ -9,8 +13,12 @@
       %img(src="img/bb_5_SelectYourBattleBar_SELECTYOURBATTLEBAR.png" alt="Select Your Battle Bar")/
     %div
       %form(action="/selectbar" method="post")
-        -for(x <- bars)
-          %input(type="radio" name="bars")
-          #{x}
+        -for((x, index) <- bars.zipWithIndex)
+          -val what = x.get("_id").toString()
+          #{what}
+          %input(type="radio" name="bar" id="#{index}" rel="#{what}")/
+        %script
+          $("form input[type='radio']").click(function () {$("#clever").attr("value", $(this).attr("rel"));
+          });
+        %input(type="hidden" name="barstring" value="good" id="clever")
         %input(type="submit" value="Submit")/
-        
