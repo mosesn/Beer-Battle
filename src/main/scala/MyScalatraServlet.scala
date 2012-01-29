@@ -115,13 +115,16 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
   get("/checkin"){
     contentType = "text/html"
-    templateEngine.layout("/WEB-INF/layouts/checkin.scaml", Map("bars" -> mongoDB("bar").find())
-)
+    templateEngine.layout("/WEB-INF/layouts/checkin.scaml",
+                          Map("bars" -> mongoDB("bar").find()))
   }
-  
+
   get("/jointeam"){
     contentType = "text/html"
-    templateEngine.layout("/WEB-INF/layouts/jointeam.scaml")
+    val tmp = mongoDB("team").find(
+      MongoDBObject("bar" -> session("bar").asInstanceOf[ObjectId]))
+    templateEngine.layout("/WEB-INF/layouts/jointeam.scaml",
+                          Map("teams", tmp))
   }
 
   get("/createteam"){
