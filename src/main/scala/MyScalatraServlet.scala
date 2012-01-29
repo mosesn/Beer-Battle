@@ -39,7 +39,8 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   def hash(str: String): String = {
     val md = MessageDigest.getInstance("SHA")
     val salt = "g8:6U&dS(c"
-    new String(md.digest(str.getBytes ++ salt.getBytes), "ASCII")
+    md.update(str.getBytes ++ salt.getBytes)
+    new String(md.digest(), "ASCII")
   }
 
   post("/login") {
