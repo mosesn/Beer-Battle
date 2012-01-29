@@ -14,9 +14,9 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   get("/play") {
     contentType = "text/html"
     if (auth(session)) {
-      templateEngine.layout("/WEB-INF/bleh.scaml", Map("sweetness" -> "fuck"))
+      "logged in"
     } else {
-      templateEngine.layout("/WEB-INF/bleh.scaml", Map("sweetness" -> "fuck"))
+      "not logged in."
     }
   }
 
@@ -67,23 +67,16 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
     val mongoColl = mongoDB("tmp")
     val number = params("number")
-    val pass = params("password")
-
+    val pw = hash(params("password"))
     val result = mongoColl.findOne(MongoDBObject("number" -> number,
-                                                 "pw" -> pass))
+                                                 "pw" -> pw))
     result match {
       case Some(s) => {
-        val pw = s("pw")
-        if (pw equals hash(pass)) {
           //TODO: Redirect where?
           //TODO: log into session
           session("number") = number
           session("pw") = pw
           2
-        } else {
-          flash += ("error" -> "Wrong password.")
-          redirect("/login")
-        }
       }
       case None => {
         flash += ("error" -> "Wrong password.")
@@ -98,12 +91,8 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   get("/signup") {
     contentType = "text/html"
     val map = Map("error" -> flash.contains("error"))
-    val rest = if (map("error")) {
-      Map("type" -> flash("error"))
-    }
-    else {
-      Map()
-    }
+    val myType = flash.getOrElse("error", "")
+    val rest = Map("myType" -> myType)
     templateEngine.layout("/WEB-INF/layouts/signup.scaml", map ++ rest)
   }
 
