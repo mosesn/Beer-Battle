@@ -124,7 +124,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     val tmp = mongoDB("team").find(
       MongoDBObject("bar" -> session("bar").asInstanceOf[ObjectId]))
     templateEngine.layout("/WEB-INF/layouts/jointeam.scaml",
-                          Map("teams", tmp))
+                          Map("teams" -> tmp))
   }
 
   get("/createteam"){
