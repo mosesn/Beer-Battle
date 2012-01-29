@@ -26,34 +26,31 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   post("/signup") {
-    val fname = params("fname")
-    val lname = params("lname")
-    if (fname.length == 0 || lname.length == 0) {
+    verifyInput(params)
+
+    val pw =  hash(params("password"))
+    val newObj = MongoDBObject("fname" -> params("fname"),
+                               "lname" -> params("lname"),
+                               "number" -> params("number"),
+                               "pw" -> pw)
+    mongoDB("user").insert(newObj)
+    session("number") = params("number")
+    session("pw") = pw
+    //TODO: Redirect where?
+  }
+
+  def verifyInput(map: Map[String, String]) {
+    if (map("fname").length == 0 || map("lname").length == 0) {
       flash += ("error" -> "Trivial name.")
       redirect("/signup")
     }
-    val number = params("number")
-    if (isInvalidNumber(number)) {
+    else if (isInvalidNumber(map("number"))) {
       flash += ("error" -> "Bad phone number.")
       redirect("/signup")
     }
-    val pass1 = params("password")
-    val pass2 = params("password2")
-    if (!(pass1 equals pass2)) {
+    else if (!(map("password") equals map("password2"))) {
       flash += ("error" -> "Different passwords.")
       redirect("/signup")
-    }
-    else {
-      val mongoColl = mongoDB("user")
-      val pw =  hash(pass1)
-      val newObj = MongoDBObject("fname" -> fname,
-                               "lname" -> lname,
-                               "number" -> number,
-                               "pw" -> pw)
-      mongoColl.insert(newObj)
-      session("number") = number
-      session("pw") = pw
-      //TODO: Redirect where?
     }
   }
 
@@ -78,24 +75,25 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   post("/login") {
-
-    val mongoColl = mongoDB("user")
     val number = params("number")
     val pw = hash(params("password"))
-    val result = mongoColl.findOne(MongoDBObject("number" -> number,
+    val result = mongoDB("user").findOne(MongoDBObject("number" -> number,
                                                  "pw" -> pw))
+    validate(result)
+    session("number") = number
+    session("pw") = pw
+    //TODO: Redirect where?
+  }
+
+  def validate(result: Option[DBObject]): Unit = {
     result match {
-      case Some(s) => {
-          //TODO: Redirect where?
-          session("number") = number
-          session("pw") = pw
-          2
-      }
+      case Some(s) => 2
       case None => {
         flash += ("error" -> "Wrong password.")
         redirect("/login")
       }
     }
+
   }
 
   val mongoConn = MongoConnection()
