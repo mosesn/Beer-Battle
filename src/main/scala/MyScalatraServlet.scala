@@ -1,17 +1,23 @@
 import org.scalatra._
 import scalate.ScalateSupport
+import com.mongodb.casbah.Imports._
 
 class MyScalatraServlet extends ScalatraServlet with ScalateSupport {
-
   get("/") {
     contentType= "text/html"
     templateEngine.layout("/WEB-INF/layouts/default.scaml")
   }
 
   get("/play") {
+    val mongoColl = mongoDB("tmp")
+    val newObj = MongoDBObject("bleh" -> "fuck")
+    mongoColl.insert(newObj)
     contentType = "text/html"
     templateEngine.layout("/WEB-INF/bleh.scaml", Map("sweetness" -> "fuck"))
   }
+
+  val mongoConn = MongoConnection()
+  val mongoDB = mongoConn("casbah_test")
 
   post("/signup") {
     println(params("fname"))
