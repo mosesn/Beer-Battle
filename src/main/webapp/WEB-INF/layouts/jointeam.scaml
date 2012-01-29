@@ -1,10 +1,17 @@
 -attributes("layout") = ""
+-import com.mongodb.casbah.MongoCursor
+-@ val teams: MongoCursor
 %html
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
   %body
     %div(id="logo")
       %img(src="img/bb_6_CreateYourTeam_JOINATEAM.png" alt="Join A Team")/
+    %div(id="")
+      %ul
+        -for(x <- teams)
+          %li #{x}
     %div(id="createteam")
       %a(href="/createteam")
         %img(src="img/bb_6_CreateYourTeam_CREATETEAM.png" alt="Create Team")/    
+    
