@@ -2,6 +2,7 @@ import org.scalatra._
 import scalate.ScalateSupport
 import com.mongodb.casbah.Imports._
 import java.security.MessageDigest
+import javax.servlet.http.HttpSession
 
 class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with ScalateSupport {
 
@@ -12,7 +13,23 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
   get("/play") {
     contentType = "text/html"
-    templateEngine.layout("/WEB-INF/bleh.scaml", Map("sweetness" -> "fuck"))
+    if (auth(session)) {
+      templateEngine.layout("/WEB-INF/bleh.scaml", Map("sweetness" -> "fuck"))
+    } else {
+      templateEngine.layout("/WEB-INF/bleh.scaml", Map("sweetness" -> "fuck"))
+    }
+  }
+
+  def auth(session: HttpSession): Boolean = {
+    session.contains("number") && session.contains("pw") && exists(
+      mongoDB("tmp").findOne(
+        MongoDBObject("number" -> session("number"),
+                      "pw" -> session("pw"))))
+  }
+
+  def exists(doc: Option[DBObject]): Boolean = doc match {
+    case Some(x) => true
+    case None => false
   }
 
   post("/signup") {
@@ -27,11 +44,14 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     }
     else {
       val mongoColl = mongoDB("tmp")
+      val pw =  hash(pass1)
       val newObj = MongoDBObject("fname" -> fname,
                                "lname" -> lname,
                                "number" -> number,
-                               "pw" -> hash(pass1))
+                               "pw" -> pw)
       mongoColl.insert(newObj)
+      session("number") = number
+      session("pw") = pw
       //TODO: Redirect where?
     }
   }
@@ -53,9 +73,12 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
                                                  "pw" -> pass))
     result match {
       case Some(s) => {
-        if (s("pw") equals hash(pass)) {
+        val pw = s("pw")
+        if (pw equals hash(pass)) {
           //TODO: Redirect where?
           //TODO: log into session
+          session("number") = number
+          session("pw") = pw
           2
         } else {
           flash += ("error" -> "Wrong password.")
@@ -74,11 +97,14 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
   get("/signup") {
     contentType = "text/html"
-    if (flash.contains("error")) {
-      templateEngine.layout("/WEB-INF/layouts/signup.scaml")
-    } else {
-      templateEngine.layout("/WEB-INF/layouts/signup.scaml")
+    val map = Map("error" -> flash.contains("error"))
+    val rest = if (map("error")) {
+      Map("type" -> flash("error"))
     }
+    else {
+      Map()
+    }
+    templateEngine.layout("/WEB-INF/layouts/signup.scaml", map ++ rest)
   }
 
   get("/login") {
