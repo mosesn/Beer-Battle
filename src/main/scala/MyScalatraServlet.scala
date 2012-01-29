@@ -9,21 +9,13 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
   get("/") {
     contentType= "text/html"
-    templateEngine.layout("/WEB-INF/layouts/default.scaml")
-  }
-
-  get("/play") {
-    contentType = "text/html"
-    if (auth(session)) {
-      "logged in"
-    } else {
-      "not logged in."
-    }
+    val map = Map("logged_in" -> auth(session))
+    templateEngine.layout("/WEB-INF/layouts/default.scaml", map)
   }
 
   def auth(session: HttpSession): Boolean = {
     session.contains("number") && session.contains("pw") && exists(
-      mongoDB("tmp").findOne(
+      mongoDB("user").findOne(
         MongoDBObject("number" -> session("number"),
                       "pw" -> session("pw"))))
   }
@@ -52,7 +44,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
       redirect("/signup")
     }
     else {
-      val mongoColl = mongoDB("tmp")
+      val mongoColl = mongoDB("user")
       val pw =  hash(pass1)
       val newObj = MongoDBObject("fname" -> fname,
                                "lname" -> lname,
@@ -87,7 +79,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
   post("/login") {
 
-    val mongoColl = mongoDB("tmp")
+    val mongoColl = mongoDB("user")
     val number = params("number")
     val pw = hash(params("password"))
     val result = mongoColl.findOne(MongoDBObject("number" -> number,
@@ -125,7 +117,8 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
   get("/checkin"){
     contentType = "text/html"
-    templateEngine.layout("/WEB-INF/layouts/checkin.scaml")
+    templateEngine.layout("/WEB-INF/layouts/checkin.scaml", Map("bars" -> mongoDB("bar").find())
+)
   }
   
   get("/jointeam"){
