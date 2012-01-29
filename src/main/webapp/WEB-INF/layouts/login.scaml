@@ -1,0 +1,20 @@
+-attributes("layout") = ""
+%html
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
+  %body
+    %div(id="logo")
+      %img(src="img/bb_2_LogIn_LOGIN.png" alt="Log In")
+    %div(id="login")
+      %form
+        %img(class="input" src="img/bb_2_LogIn_PHONE.png" alt="Phone Number") 
+        %br/
+        %input(type="text" name="phone")/ 
+        %br/
+        %img(class="input" src="img/bb_2_LogIn_PASSWORD.png" alt="Password")
+        %br/
+        %input(type="password" name="password")/ 
+        %br/
+    %div(id="newaccount")
+      %a(href="/signup")
+        %img(src="img/bb_2_LogIn_CREATENEWACCOUNT.png" alt="Create New Account")

@@ -46,6 +46,11 @@ text-decoration: none;
 
 img.input {
   width: 50%;
+  padding: 2% 0 2% 0;
+}
+
+#newaccount img {
+  margin: 20% 0 0 22%;
 }
 
 /* FORMS */
