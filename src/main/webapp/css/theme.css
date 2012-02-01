@@ -1,7 +1,7 @@
 /** CHANGE COLORS HERE **/
 
 body, .toolbar, #jqt ul, #jqt ul.individual li,#jqt ul li a.active,#jqt .info,#jqt #plastic,#tabbar, .s-scrollpane {
-    background-color: black; /* main background color */
+    background-color: #25231f; /* main background color */
 }
 #jqt h1, #jqt h2, #jqt ul li a,#jqt .whiteButton, #jqt .button.active, #jqt .cancel.active, #jqt .add.active, #jqt .back.active,#jqt ul li small,#tabbar .badge,#jqt .info,#jqt .info a  {
     color: gray; /* main text color */
@@ -13,8 +13,9 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     background-image: url(../img/bg_noise.png);
 }
 #jqt > * {
-    background: rgba(0,255,255,0.9);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1C3780), to(#000245));
 }
+
 #jqt h1, #jqt h2, #jqt ul li a {
     font: bold 18px "Helvetica Neue", Helvetica;
     text-shadow: white 0 1px 0;
@@ -25,7 +26,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
 #jqt .toolbar {
     -webkit-box-sizing: border-box;
 /*     border-bottom: 1px solid rgba(0,0,0,0.5); */
-    padding: 10px;
+    padding: 4%;
     height: 45px;
     position: relative;
     -webkit-box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2);
@@ -36,13 +37,13 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
 #jqt .toolbar > h1 {
     position: absolute;
     overflow: hidden;
-    left: 50%;
-    top: 10px;
+    left: 48%;
+    top: 25px;
     line-height: 1em;
     margin: 1px 0 0 -75px;
     height: 40px;
-    font-size: 20px;
-    width: 150px;
+    font-size: 40px;
+    width: 200px;
     font-weight: bold;
     text-shadow: rgba(0,0,0,0.5) 0 1px 1px;
     text-align: center;
@@ -77,6 +78,10 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     background: rgba(0,0,0,0.4);
     border-radius: 8px;
 }
+
+
+  
+}
 #jqt .button.active, #jqt .cancel.active, #jqt .add.active, #jqt .back.active {
     background: rgba(255,255,255,0.9);
     text-shadow: none;
@@ -105,7 +110,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
 }
 #jqt .whiteButton,#jqt .grayButton, #jqt .redButton, #jqt .blueButton, #jqt .greenButton {
     display: block;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
@@ -286,8 +291,11 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
 /*
 @end */
 /* @group Forms */
+
+
 #jqt ul.form li {
     padding: 7px 10px;
+    color: white;
 }
 #jqt ul.form li.error {
     border: 2px solid red;
@@ -435,16 +443,18 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
 }
 /* @end */
 /* @group Info */
-#jqt .info {
+#jqt .info, .info a{
+    width: 47%;
+    margin: 0 0 10% 50%;
     font-size: 12px;
     line-height: 16px;
     text-align: center;
-    text-shadow: rgba(255,255,255,0.5) 0 1px 0;
+/*    text-shadow: rgba(255,255,255,0.5) 0 1px 0;*/
     padding: 15px;
     font-weight: bold;
     -webkit-box-shadow: inset 0 -5px 5px rgba(0,0,0,0.3);
     border-top: 1px solid rgba(0,0,0,0.5);
-    background-image: -webkit-gradient(linear, left top, left bottom,from(rgba(255,255,255,0.8)))
+    background-image: -webkit-gradient(linear, left top, left bottom,from(#870000), to(#4D0000))
 }
 /* @end */
 /* @group Edge to edge */

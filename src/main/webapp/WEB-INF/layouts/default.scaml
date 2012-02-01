@@ -1,3 +1,4 @@
+-@ val logged_in: Boolean = 
 %html
   <!-- importing jquery from google -->
   %script(type="text/javascript" src="http://www.google.com/jsapi")
@@ -29,7 +30,20 @@
       %div(class="toolbar")
         %h1
           BeerBattle
-      %ul(class="whiteButton")
-        %li
-          %a(href="#item1")
-            Item 1
+      -if(logged_in)    
+        %ul(class="whiteButton")
+          %li
+            %a(href="/selectbar")
+              PLAY              
+        %div(class="info")
+          %a(href="/logout")
+            LOGOUT        
+      -else
+        %ul(class="whiteButton")
+          %li
+            %a(href="/login")
+              PLAY
+        %div(class="info")
+          %a(href="/logout")
+            LOGOUT        
+      
