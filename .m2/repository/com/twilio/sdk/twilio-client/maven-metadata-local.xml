@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.twilio.sdk</groupId>
+  <artifactId>twilio-client</artifactId>
+  <version>3.3.7</version>
+  <versioning>
+    <versions>
+      <version>3.3.7</version>
+    </versions>
+    <lastUpdated>20120201164556</lastUpdated>
+  </versioning>
+</metadata>
