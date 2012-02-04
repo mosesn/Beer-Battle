@@ -277,7 +277,9 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
           case None => redirect("/jointeam")
         }
       }
-      templateEngine.layout("/WEB-INF/layouts/queue.scaml")
+      val queue = mongoDB("queue").find(MongoDBObject("bar" -> session("bar")))
+      val battlers = mongoDB("fight").find(MongoDBObject("bar" -> session("bar")))
+      templateEngine.layout("/WEB-INF/layouts/queue.scaml", Map("battlers" -> battlers, "queue" -> queue))
     }
     else {
       redirect("/")
