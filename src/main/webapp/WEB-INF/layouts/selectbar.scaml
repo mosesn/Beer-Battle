@@ -2,11 +2,21 @@
 - import com.mongodb.casbah.MongoCursor
 -@ val bars: MongoCursor
 
-%html
+%html      
+  %head
+    %link(rel="stylesheet" type="text/css" href="/css/theme.css")/
+    %link(rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css")/
   %body
-    %form(action="/selectbar" method="post")
-      -for((x, index) <- bars.zipWithIndex)
-        -val what = x.get("_id").toString()
-        #{what}
-        %input(type="radio" name="bar" id="#{index}" value="#{what}")/
-      %input(type="submit" value="Submit")/
+    %ul(id="jqt")
+      %div(class="toolbar")
+        %h1
+          Select Bar    
+    %form(id="jqt" action="/selectbar" method="post")
+      %ul(class="form")
+        -for((x, index) <- bars.zipWithIndex)
+          -val what = x.get("_id").toString()
+          %li          
+            %input(type="radio" name="bar" id="#{index}" value="#{what}")/
+            #{what}
+        %li
+          %input(type="submit" value="Submit")/

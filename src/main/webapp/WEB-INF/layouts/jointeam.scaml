@@ -3,17 +3,40 @@
 -@ val teams: MongoCursor
 
 %html
+  %head
+    %link(rel="stylesheet" type="text/css" href="/css/theme.css")/
+    %link(rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css")/
+  
   %body
-    %div(id="logo")
-      %img(src="img/bb_6_CreateYourTeam_JOINATEAM.png" alt="Join A Team")/
-    %form(action="/jointeam" method="post")
-      -for((x, index) <- teams.zipWithIndex)
-        - val what = x.get("number")
-        %input(type="radio" name="team" id="#{index}" value="#{what}")/
-        -if(x.containsKey("pw"))
-          %input(type="password" name="password")
-            pw
-      %input(type="submit" value="Submit")/
-    %div(id="createteam")
-      %a(href="/createteam")
-        %img(src="img/bb_6_CreateYourTeam_CREATETEAM.png" alt="Create Team")/
+    %ul(id="jqt")
+      %div(class="toolbar")
+        %h1
+          Join Team
+    %form(id="jqt" action="/jointeam" method="post")
+      %ul(class="form")
+        -if(teams.isEmpty)
+          %li
+            %h3
+              No Open Teams Available
+        -else
+          -for((x, index) <- teams.zipWithIndex)
+            -val what = x.get("number")
+            %li
+              %input(type="radio" name="team" id="#{index}" value="#{what}")/
+              -if(x.containsKey("pw"))
+                %li
+                  %input(type="password" name="password")
+                    pw
+          %li
+            %input(type="submit" value="Submit")/
+    %div(id="jqt")
+      %ul(class="newTeam")
+        %li
+          %a(href="/createteam")
+            Create New Team      
+        -# THIS IS FOR JOIN TEAM
+          %div(id="jqt")
+            %ul(class="rounded")
+              %li
+                %a(href="/")
+                  test1 

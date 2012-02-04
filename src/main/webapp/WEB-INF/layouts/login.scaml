@@ -1,13 +1,16 @@
 -attributes("layout") = ""
 %html
-  <link rel="stylesheet" type="text/css" href="/css/theme.css" />
-  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
+  %head
+    %link(rel="stylesheet" type="text/css" href="/css/theme.css")/
+    %link(rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css")/
   %body
-    %div(id="jqt")
-      %form(action="/login" method="post")
+    %ul(id="jqt")
+      %div(class="toolbar")
+        %h1
+          Log In
+    %div(class="login")
+      %form(id="jqt" action="/login" method="post")
         %ul(class="form")
-          %li
-            Log In
           %li
             Phone Number
           %li
@@ -17,7 +20,11 @@
           %li
             %input(type="password" name="password")/
           %li
-            %input(type="submit" value="Submit")/
-      %div(id="newaccount")
-        %a(href="/signup")
-          %img(src="img/bb_2_LogIn_CREATENEWACCOUNT.png" alt="Create New Account")
+            %input(type="submit" value="submit")/
+    %div(id="jqt")
+      %ul(class="newAccount")
+        %li
+          %a(href="/signup")
+            Create New Account      
+          
+          
