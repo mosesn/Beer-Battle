@@ -283,7 +283,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
               mongoDB("queue").insert(x)
             }
           }
-          case None => redirect("/jointeam")
+          case None => 0
         }
       }
       val queue = mongoDB("queue").find(MongoDBObject("bar" -> session("bar")))
