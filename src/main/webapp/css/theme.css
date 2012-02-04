@@ -1,10 +1,10 @@
 /** CHANGE COLORS HERE **/
 
 body, .toolbar, #jqt ul, #jqt ul.individual li,#jqt ul li a.active,#jqt .info,#jqt #plastic,#tabbar, .s-scrollpane {
-    background-color: #25231f; /* main background color */
+    background-color: #ded4b9; /* main background color */
 }
-#jqt h1, #jqt h2, #jqt ul li a,#jqt .whiteButton, #jqt .button.active, #jqt .cancel.active, #jqt .add.active, #jqt .back.active,#jqt ul li small,#tabbar .badge,#jqt .info,#jqt .info a  {
-    color: gray; /* main text color */
+#jqt h1, #jqt h2, #jqt ul li a,#jqt .whiteButton, #jqt .newAccount, #jqt .newTeam, #jqt .button.active, #jqt .cancel.active, #jqt .add.active, #jqt .back.active,#jqt ul li small,#tabbar .badge,#jqt .info,#jqt .info a  {
+    color: white; /* main text color */
 }
 
 /** END **/
@@ -13,12 +13,12 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     background-image: url(../img/bg_noise.png);
 }
 #jqt > * {
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1C3780), to(#000245));
+    background: #CE534D;
 }
 
 #jqt h1, #jqt h2, #jqt ul li a {
     font: bold 18px "Helvetica Neue", Helvetica;
-    text-shadow: white 0 1px 0;
+    text-shadow: #46433A 0 1px 0;
     margin: 10px 20px 5px;
 }
 
@@ -37,13 +37,13 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
 #jqt .toolbar > h1 {
     position: absolute;
     overflow: hidden;
-    left: 48%;
+    left: 40%;
     top: 25px;
     line-height: 1em;
     margin: 1px 0 0 -75px;
     height: 40px;
     font-size: 40px;
-    width: 200px;
+    width: 400px;
     font-weight: bold;
     text-shadow: rgba(0,0,0,0.5) 0 1px 1px;
     text-align: center;
@@ -108,27 +108,39 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     line-height: 24px;
     font-weight: bold;
 }
-#jqt .whiteButton,#jqt .grayButton, #jqt .redButton, #jqt .blueButton, #jqt .greenButton {
+#jqt .whiteButton,#jqt .grayButton, #jqt .redButton, #jqt .blueButton, #jqt .greenButton, #jqt .newAccount, #jqt .newTeam {
     display: block;
     padding: 5px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    text-decoration: inherit;
-    border-radius: 10px;
+        border-radius: 10px;
     border: 1px solid rgba(0,0,0,0.2);
-    text-shadow: 0 2px 0 rgba(0,0,0,0.2);
+}
+
+#jqt .redButton{
+	width: 49%;
+}
+
+#jqt .newAccount{
+	width: 49%;
+	margin: 300px 0 0 631px;
+}
+
+#jqt .newTeam {
+	width: 49%;
+	margin: 120px 0 0 631px;
 }
 
 #jqt .whiteButton.active, #jqt .grayButton.active, #jqt .redButton.active, #jqt .blueButton.active, #jqt .greenButton.active,
 #jqt .whiteButton:active, #jqt .grayButton:active, #jqt .redButton:active, #jqt .blueButton:active, #jqt .greenButton:active {
   
 }
-#jqt .whiteButton {
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));
+#jqt .whiteButton, #jqt .newAccount, #jqt .newTeam {
+    background: #64B6B1;
     text-shadow: rgba(255, 255, 255, 0.7) 0 1px 0;
 }
-#jqt .whiteButton.active {
+#jqt .whiteButton.active, #jqt .newAccount.active, #jqt .newTeam.active {
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#fff));
     text-shadow: rgba(255, 255, 255, 0.7) 0 1px 0;
 }
@@ -144,6 +156,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     color: white;
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ee0000), to(#cc0000));
 }
+
 #jqt .redButton.active {
     color: white;
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cc0000), to(#ee0000));
@@ -168,6 +181,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     margin: 15px 10px 17px 10px;
 }
 #jqt ul.rounded {
+	background: #64B6B1;
     -webkit-border-radius: 8px;
     -webkit-box-shadow: rgba(0,0,0,.3) 1px 1px 3px;
 }
@@ -185,7 +199,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     -webkit-border-bottom-right-radius: 8px;
 }
 #jqt ul li {
-    color: white;
+    color: #64B6B1;
     list-style-type: none;
     padding: 10px 10px 10px 10px;
     overflow: hidden;
@@ -295,7 +309,7 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
 
 #jqt ul.form li {
     padding: 7px 10px;
-    color: white;
+    color: #46433A;
 }
 #jqt ul.form li.error {
     border: 2px solid red;
@@ -456,6 +470,10 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
     border-top: 1px solid rgba(0,0,0,0.5);
     background-image: -webkit-gradient(linear, left top, left bottom,from(#870000), to(#4D0000))
 }
+/* @end */
+
+/* buttons */
+
 /* @end */
 /* @group Edge to edge */
 #jqt ul.edgetoedge {
