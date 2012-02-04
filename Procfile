@@ -1,1 +1,1 @@
-web: target/start
+scalatra-sbt-prototype: target/start
