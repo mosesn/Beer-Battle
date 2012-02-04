@@ -209,8 +209,10 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
   }
 
-  val mongoConn = MongoConnection(MongoURI("mongodb://augusto:penis@staff.mongohq.com:10018/beerbattle"))
-  val mongoDB = mongoConn("casbah_test")
+  val mongoConn = MongoConnection("staff.mongohq.com", 10018)
+  val mongoDB = mongoConn("beerbattle")
+  mongoDB.authenticate("augusto", "penis")
+
   val account = new TwilioRestClient("AC420cb3581df14275a7fd6bfd8f1207ff", "c2990d1fa7bba4bfa96f95caefdd20d0").getAccount()
 
   get("/signup") {
