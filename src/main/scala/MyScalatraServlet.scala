@@ -232,6 +232,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
   post("/selectbar") {
     if (params.contains("bar")) {
+      println(params("bar"))
       session("bar") = params("bar").asInstanceOf[String]
       redirect("/jointeam")
     }
@@ -282,7 +283,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
               mongoDB("queue").insert(x)
             }
           }
-          case None => redirect("/jointeam")
+          case None => 0
         }
       }
       val queue = mongoDB("queue").find(MongoDBObject("bar" -> session("bar")))
@@ -350,7 +351,6 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   post("/createteam") {
     val pw = params("pw")
     val mongoColl = mongoDB("team")
-
     if (pw equals "") {
       mongoColl.insert(MongoDBObject("size" -> 1,
                                      "members" -> Array(session("number")),
@@ -364,7 +364,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
                                      "bar" -> session("bar"),
                                      "number" -> session("number")))
     }
-    redirect("/jointeam")
+    redirect("/waiting")
   }
 
   get("/createteam"){
