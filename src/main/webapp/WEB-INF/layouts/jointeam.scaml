@@ -20,7 +20,7 @@
         -else
           -for((x, index) <- teams.zipWithIndex)
             -val what = x.get("name")
-	    -val number = x.get("number")
+            -val number = x.get("number")
             %li(class="radio")
               %input(type="radio" name="team" id="#{index}" value="#{number}")/
               #{what}
