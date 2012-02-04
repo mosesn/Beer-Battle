@@ -268,7 +268,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
             x.removeKey("_id")
             val otherUser = getNextUser(session("bar").asInstanceOf[String], session("number").asInstanceOf[String])
             if (otherUser.isDefined) {
-              engagePlayers(x, otherUser.get)
+              engagePlayers(otherUser.get, x)
             }
             else {
               mongoDB("queue").insert(x)
