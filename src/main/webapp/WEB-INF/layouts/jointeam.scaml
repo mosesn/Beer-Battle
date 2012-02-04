@@ -20,8 +20,9 @@
         -else
           -for((x, index) <- teams.zipWithIndex)
             -val what = x.get("number")
-            %li
+            %li(class="radio")
               %input(type="radio" name="team" id="#{index}" value="#{what}")/
+	      #{what}
               -if(x.containsKey("pw"))
                 %li
                   Password
