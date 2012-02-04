@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0mOther repositories:[0m
 [0m[[0mdebug[0m] [0mDefault repositories:[0m
 [0m[[0mdebug[0m] [0m	URLRepository(typesafe-ivy-releases,sbt.Patterns@2778c490)[0m
@@ -48,3 +49,5 @@
 [0m[[0minfo[0m] [0mResolving org.scala-tools.sbt#precompiled-2_8_1;0.11.2 ...[0m
 [0m[[0minfo[0m] [0mResolving org.scala-tools.sbt#precompiled-2_8_0;0.11.2 ...[0m
 [0m[[0minfo[0m] [0mResolving org.scala-tools.sbt#precompiled-2_9_0;0.11.2 ...[0m
+=======
+>>>>>>> swiss centipede
