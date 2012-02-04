@@ -351,7 +351,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   post("/createteam") {
     val pw = params("pw")
     val mongoColl = mongoDB("team")
-    old = mongoDB("user").findOne(MongoDBObject("number" -> session("number"))).get
+    val old = mongoDB("user").findOne(MongoDBObject("number" -> session("number"))).get
     if (pw equals "") {
       mongoColl.insert(MongoDBObject("size" -> 1,
                                      "members" -> Array(session("number")),
