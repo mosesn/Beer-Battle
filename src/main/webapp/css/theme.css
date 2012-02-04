@@ -1,7 +1,11 @@
+@import url("/css/jqtouch.css");
+
 /** CHANGE COLORS HERE **/
 
 body, .toolbar, #jqt ul, #jqt ul.individual li,#jqt ul li a.active,#jqt .info,#jqt #plastic,#tabbar, .s-scrollpane {
     background-color: #ded4b9; /* main background color */
+    margin-left: auto;
+    margin-right: auto;
 }
 #jqt h1, #jqt h2, #jqt ul li a,#jqt .whiteButton, #jqt .newAccount, #jqt .newTeam, #jqt .button.active, #jqt .cancel.active, #jqt .add.active, #jqt .back.active,#jqt ul li small,#tabbar .badge,#jqt .info,#jqt .info a  {
     color: white; /* main text color */
@@ -34,13 +38,13 @@ body, .toolbar, #jqt ul, #jqt ul.individual li, #jqt ul li a.active,#tabbar,.s-s
 #jqt .black-translucent .toolbar {
     margin-top: 20px;
 }
-#jqt .toolbar > h1 {
-    position: absolute;
+#jqt .toolbar h1{
+    position: relative;
     overflow: hidden;
-    left: 40%;
-    top: 25px;
+    left: -20%;
+    top: 5%;
     line-height: 1em;
-    margin: 1px 0 0 -75px;
+    margin: 0 0 0 0;
     height: 40px;
     font-size: 40px;
     width: 400px;
@@ -619,3 +623,5 @@ input[type='submit'] {
     font-weight: inherit;
     padding: 10px;
 }
+
+
