@@ -20,6 +20,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   get("/signout") {
     contentType = "text/html"
     session.invalidate
+    redirect("/")
   }
 
   get("/waiting") {
