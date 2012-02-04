@@ -316,8 +316,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     if (pw equals "") {
       coll.remove(MongoDBObject("members" -> session("number")))
       coll.update(MongoDBObject("number" -> params("team")),
-                  MongoDBObject("$inc" -> MongoDBObject("size" -> 1), "$push" ->
-                                MongoDBObject("members" -> session("number"))))
+                  MongoDBObject("$inc" -> MongoDBObject("size" -> 1), "$push" -> MongoDBObject("members" -> session("number"))))
     }
     else {
       if (coll.findOne(MongoDBObject("pw" -> hash(pw))).isDefined) {
