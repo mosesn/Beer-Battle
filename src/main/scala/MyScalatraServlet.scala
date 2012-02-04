@@ -349,7 +349,6 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   post("/createteam") {
-    mongoDB.authenticate("augusto", "penis")
     val pw = params("pw")
     val mongoColl = mongoDB("team")
     if (pw equals "") {
