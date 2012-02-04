@@ -1,21 +1,20 @@
 - attributes("layout") = ""
 - import com.mongodb.casbah.MongoCursor
 -@ val teams: MongoCursor
-
 %html
   %head
-    %link(rel="stylesheet" type="text/css" href="/css/theme.css")/
-    %link(rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css")/
-  
+    <!-- Change theme here -->
+    <meta name="viewport" content="user-scalable=no, width=device-width"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    %link(type="text/css" rel="stylesheet" media="screen" href="/css/iphone.css")
   %body
-    %ul(id="jqt")
-      %div(class="toolbar")
-        %h1
-          Join Team
-    %form(id="jqt" action="/jointeam" method="post")
-      %ul(class="form")
+    %div
+      %h1(class="title")
+        Join Team
+    %form(action="/jointeam" method="post")
+      %ul(class="rounded")
         -if(teams.isEmpty)
-          %li
+          %li(class="different")
             %h3
               No Open Teams Available
         -else
@@ -29,8 +28,8 @@
                     pw
           %li
             %input(type="submit" value="Submit")/
-    %div(id="jqt")
-      %ul(class="newTeam")
+    %div
+      %ul(class="rounded")
         %li
           %a(href="/createteam")
             Create New Team      
