@@ -9,12 +9,13 @@
   %body
     %div
       %h1(class="title")
-        Get Your Team Ready
+        Waiting
     %div
-      %ul(class="rounded")
+      %ul(class="error")
         -if(error)
-          %li(class="error")
+          %li
             Teammate hasn't joined yet!
+      %ul(class="rounded")  
         %li
           %a(href="/advance") 
             Click Here When Your Teammate Joins
