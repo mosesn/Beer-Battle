@@ -1,0 +1,171 @@
+/*
+Design by predic8 GmbH
+http://www.predic8.de
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	background: #DED4B9;
+	padding: 0px;
+	margin: 0px;
+	color: #46433A;
+	text-shadow: 0px 1px -1px #fff;
+	text-align: center;
+	font: normal 15px Arial;
+}
+
+.logo {
+	width: 70%;
+	padding: 8%;
+}
+h1 {
+	background: #CE534D;
+	margin: 0px;
+	height: 34px;
+	font-size: 22px;
+	border-bottom: 1px solid black;
+	color: #46433A;
+	padding: 8px 0px 0px 0px;
+	text-align: center;
+	-webkit-box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2);
+	text-shadow: rgba(0,0,0,0.5) 0 1px 1px;
+}
+
+h2{
+	text-align: left;
+	font-size: 19px;
+	margin-left: 12px;
+}
+
+
+
+p{
+	margin: 1em;
+}
+
+ul{
+	list-style: none;
+	margin: 10px;
+	padding: 0px;
+}
+
+ul.rounded {
+	background: #64B6B1;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: rgba(0,0,0,.3) 1px 1px 3px;
+}
+
+ul.battleGround{
+	background: #6469B5;
+}
+
+fieldset {
+  overflow: hidden;
+}
+label {
+  padding: 2px 1em 0 0;
+}
+input[type=radio], input.radio {
+  margin: 2px 0 0 2px;
+}
+
+ul.rounded li a, ul.individual li a {
+  color: white;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+ul.rounded li:first-child, ul.rounded li:first-child a {
+    border-top: 0;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+}
+ul.rounded li:last-child, ul.rounded li:last-child a {
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+ul.rounded li.different {	
+	background: #64B6B1;
+	color: white;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+a{	
+	text-decoration: none;
+}
+li{
+	background-color: #64B6B1;
+	border: 1px solid #ababab;
+	margin-bottom: -2px;
+	padding: 12px 10px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+
+ul.error li{
+	background-color: red; 
+	text-shadow: none;
+}
+
+li.arrow{
+	background-image: url(/img/arrow.png);
+  	background-position: right center;
+  	background-repeat: no-repeat;	
+}
+
+li span.right{
+	position:absolute;
+	right: 45px;
+	text-align: right;
+	color: #385487;
+	font-weight: normal;
+}
+
+li:first-child{
+   -webkit-border-top-left-radius: 12px;
+   -webkit-border-top-right-radius: 12px;
+}
+
+li:last-child {
+   -webkit-border-bottom-left-radius: 12px;
+   -webkit-border-bottom-right-radius: 12px;
+}
+
+.button{
+	-webkit-box-shadow: 0px -1px 1px #2f3740, 0px 1px 1px #bfcbdb;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#8aa1bf), color-stop( 50%, #5877a2), color-stop(50%, #476999), to(#4a6c9b));
+	-webkit-border-radius: 4px;
+	font: bold 12px Arial;
+	text-align: center;
+	line-height: 28px;
+	color: white;
+	text-shadow: rgba(0,0,0,0.5) 0px -1px 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-tap-highlight-color: white;
+	padding: 2px;
+	position: absolute;
+	top: 4px;
+	left: 6px;
+	border: 1px solid #3e444c;
+	
+}
+
+.button-bold{
+	-webkit-box-shadow: 0px -1px 1px #2f3740, 0px 1px 1px #bfcbdb;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#8aa1bf), color-stop( 50%, #5877a2), color-stop(50%, #476999), to(#4a6c9b));
+	-webkit-border-radius: 4px;
+	font: bold 32px Arial;
+	width: 27px;
+	text-align: center;
+	line-height: 28px;
+	color: white;
+	text-shadow: rgba(0,0,0,0.5) 0px -1px 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-tap-highlight-color: white;
+	padding: 2px;
+	position: absolute;
+	top: 4px;
+	right: 6px;
+	border: 1px solid #3e444c;
+}
