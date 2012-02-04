@@ -19,7 +19,7 @@
               No Open Teams Available
         -else
           -for((x, index) <- teams.zipWithIndex)
-            -val what = x.get("number")
+            -val what = x.get("name")
             %li(class="radio")
               %input(type="radio" name="team" id="#{index}" value="#{what}")/
 	      #{what}
