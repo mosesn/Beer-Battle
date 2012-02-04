@@ -2,35 +2,41 @@
 -@ val error: Boolean = false
 -@ val myType: String = ""
 %html
-  <link rel="stylesheet" type="text/css" href="/css/style.css" />
-  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
+  %head
+    %link(rel="stylesheet" type="text/css" href="/css/theme.css")/
+    %link(rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css")/
   %body
-    %div(id="signup")
-      %form(action="/signup" method="post")
-        -if(error)
-          %p
+    %ul(id="jqt")
+      %div(class="toolbar")
+        %h1
+          Sign Up  
+      -if(error)      
+        %ul(class="form")
+          %li(class="error")
             #{myType}
-          %br/
-        %img(class="input" src="img/bb_2_SignUp_FIRSTNAME.png" alt="First Name")
-        %br/
-        %input(type="text" name="fname")/
-        %br/
-        %img(class="input" src="img/bb_2_SignUp_LASTNAME.png" alt="First Name")
-        %br/
-        %input(type="text" name="lname")/
-        %br/
-        %img(class="input" src="img/bb_2_SignUp_PHONENUMBER.png" alt="First Name")
-        %br/
-        %input(type="text" name="number")/
-        %br/
-        %img(class="input" src="img/bb_2_SignUp_PASSWORD.png" alt="First Name")
-        %br/
-        %input(type="password" name="password")/
-        %br/
-        %img(class="input" src="img/bb_2_SignUp_PASSWORDAGAIN.png" alt="First Name")
-        %br/
-        %input(type="password" name="password2")/
-        %br/
-        %div(id="submit")
-          %input(type="submit" value="Submit")/
-
+      %br/         
+    %form(id="jqt" action="/signup" method="post")
+      %ul(class="form")
+        %li
+          First Name
+        %li
+          %input(type="text" name="fname")/
+        %li
+          Last Name
+        %li
+          %input(type="text" name="lname")/
+        %li
+          Phone Number
+        %li
+          %input(type="text" name="number")/
+        %li
+          Password
+        %li
+          %input(type="password" name="password")/
+        %li
+          Password (again)
+        %li
+          %input(type="password" name="password2")/
+        %li
+          %input(type="submit" value="submit")/
+      

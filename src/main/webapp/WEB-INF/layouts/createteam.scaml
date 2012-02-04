@@ -1,10 +1,22 @@
-- attributes("layout") = ""
-
+-attributes("layout") = ""
 %html
+  %head
+    %link(rel="stylesheet" type="text/css" href="/css/theme.css")/
+    %link(rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css")/
+
   %body
-    %div(id="logo")
-      %img(src="img/bb_6_CreateYourTeam_TEAMCREATION.png" alt="Team Creation")
-    %form(action="/createteam" method="post")
-      Password (optional)
-      %input(type="text" name="pw")/
-      %input(type="image" src="img/bb_6_CreateYourTeam_CREATETEAM.png" alt="create team")
+    %ul(id="jqt")
+      %div(class="toolbar")
+        %h1
+          Team Creation 
+    %form(id="jqt" action="/waiting" method="post")
+      %ul(class="form")
+        %li
+          Password (optional) 
+        %li  
+          %input(type="text" name="pw")/
+        %li
+          %input(type="submit" value="submit")/
+      
+      
+      
