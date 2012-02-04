@@ -231,15 +231,22 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   post("/selectbar") {
+    if (params.contains("bar")) {
       session("bar") = params("bar").asInstanceOf[String]
       redirect("/jointeam")
+    }
+    else {
+      flash += ("error" -> "didn't select a bar")
+      redirect("/selectbar")
+    }
   }
 
   get("/selectbar") {
     if (auth(session)) {
       contentType = "text/html"
       templateEngine.layout("/WEB-INF/layouts/selectbar.scaml",
-                            Map("bars" -> mongoDB("bar").find()))
+                            Map("bars" -> mongoDB("bar").find(),
+                                "error" -> flash.contains("error")))
     }
     else {
       redirect("/")
