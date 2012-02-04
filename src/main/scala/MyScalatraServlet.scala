@@ -286,7 +286,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
           case None => 0
         }
       }
-      val queue = mongoDB("queue").find(MongoDBObject("bar" -> session("bar")))
+      val queue = mongoDB("queue").find(MongoDBObject("bar" -> session("bar"))).sort(MongoDBObject("time" -> 1))
       val battlers = mongoDB("fight").find(MongoDBObject("bar" -> session("bar")))
       templateEngine.layout("/WEB-INF/layouts/queue.scaml", Map("battlers" -> battlers, "queue" -> queue))
     }
