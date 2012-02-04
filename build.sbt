@@ -26,5 +26,4 @@ libraryDependencies ++= Seq(
 
 resolvers += "Sonatype OSS Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
 
-resolvers += "Local Maven Repository" at "file://"+Path.userHome.absolutePath+"/.m2/repository"
-
+resolvers += "Local Maven Repository" at "file://"+System.getProperty("user.dir")+"/.m2/repository"
