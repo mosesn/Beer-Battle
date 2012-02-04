@@ -1,0 +1,60 @@
+-@ val logged_in: Boolean = false
+
+%html
+  %head
+    %title Beer Battle
+
+    %script(src= "/jqtouch/zepto.min.js" type="text/javascript" charset="utf-8")
+    %script(src= "/jqtouch/jqtouch.min.js" type="text/javascript" charset="utf-8")
+    
+    %link(rel="stylesheet" type="text/css" href="/css/theme.css")/
+    %link(rel="stylesheet" type="text/css" href="/css/jqtouch.css")/
+    
+    %script(type="text/javascript" charset="utf-8")
+      var jQT = new $.jQTouch({statusBar:'black'});
+
+
+  %body(id="jqt")
+    %div(id="home" class="current")
+      %div(class="toolbar")
+        %h1
+          BeerBattle
+      -if(logged_in)    
+        %ul(class="whiteButton")
+          %li
+            %a(href="/selectbar")
+              PLAY              
+        %ul(class="redButton")
+          %li
+            %a(href="/signout")
+              LOGOUT
+      -else
+        %ul(class="whiteButton")
+          %li
+            %a(class='.cube' href="#login")
+              PLAY
+    %div(id="login")
+      %ul(id="jqt")
+        %div(class="toolbar")
+          %h1
+            Log In
+      %div(class="login")
+        %form(id="jqt" action="/login" method="post")
+          %ul(class="form")
+            %li
+              Phone Number
+            %li
+              %input(type="text" name="number")/
+            %li
+              Password
+            %li
+              %input(type="password" name="password")/
+            %li
+              %input(type="submit" value="submit")/
+      %div(id="jqt")
+        %ul(class="newAccount")
+          %li
+            %a(href="/signup")
+              Create New Account      
+          
+          
