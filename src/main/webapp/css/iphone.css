@@ -60,6 +60,14 @@ ul.rounded {
 
 ul.battleGround{
 	background: #6469B5;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: rgba(0,0,0,.3) 1px 1px 3px;
+}
+
+ul.refresh {	
+	background: #CE534D;
+	-webkit-border-radius: 8px;
+	-webkit-box-shadow: rgba(0,0,0,.3) 1px 1px 3px;
 }
 
 fieldset {
@@ -96,7 +104,7 @@ a{
 	text-decoration: none;
 }
 li{
-	background-color: #64B6B1;
+	
 	border: 1px solid #ababab;
 	margin-bottom: -2px;
 	padding: 12px 10px;
