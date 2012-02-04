@@ -1,1 +1,1 @@
-web: target/start JettyLauncher
+web: start2 JettyLauncher
