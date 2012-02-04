@@ -1,13 +1,13 @@
 [0m[[0mdebug[0m] [0mOther repositories:[0m
 [0m[[0mdebug[0m] [0mDefault repositories:[0m
-[0m[[0mdebug[0m] [0m	URLRepository(typesafe-ivy-releases,sbt.Patterns@39fc0f04)[0m
+[0m[[0mdebug[0m] [0m	URLRepository(typesafe-ivy-releases,sbt.Patterns@7059c8b5)[0m
 [0m[[0mdebug[0m] [0m	Raw(ProjectResolver(inter-project, mapped: ))[0m
-[0m[[0mdebug[0m] [0m	FileRepository(local,FileConfiguration(true,None),sbt.Patterns@5cfe174)[0m
-[0m[[0mdebug[0m] [0m	URLRepository(typesafe-ivy-releases,sbt.Patterns@39fc0f04)[0m
+[0m[[0mdebug[0m] [0m	FileRepository(local,FileConfiguration(true,None),sbt.Patterns@57e40274)[0m
+[0m[[0mdebug[0m] [0m	URLRepository(typesafe-ivy-releases,sbt.Patterns@7059c8b5)[0m
 [0m[[0mdebug[0m] [0m	public: http://repo1.maven.org/maven2/[0m
 [0m[[0mdebug[0m] [0m	Scala-Tools Maven2 Repository: http://scala-tools.org/repo-releases[0m
 [0m[[0mdebug[0m] [0mUsing inline dependencies specified in Scala.[0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.startscript#xsbt-start-script-plugin;0.3.0 ...[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.startscript#xsbt-start-script-plugin;0.5.0 ...[0m
 [0m[[0minfo[0m] [0mResolving com.github.siasia#xsbt-web-plugin_2.9.1;0.11.2-0.2.10 ...[0m
 [0m[[0minfo[0m] [0mResolving com.github.siasia#plugin-commons_2.9.1;0.11.2-0.1 ...[0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.9.1 ...[0m
