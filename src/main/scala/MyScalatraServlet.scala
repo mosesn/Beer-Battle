@@ -1,6 +1,7 @@
 import org.scalatra._
 import scalate.ScalateSupport
 import com.mongodb.casbah.Imports._
+import com.mongodb.casbah.MongoURI
 import java.util.Date
 import java.security.MessageDigest
 import javax.servlet.http.HttpSession
@@ -208,7 +209,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
   }
 
-  val mongoConn = MongoConnection("mongodb://augusto:penis@staff.mongohq.com:10018/beerbattle")
+  val mongoConn = MongoConnection(MongoURI("mongodb://augusto:penis@staff.mongohq.com:10018/beerbattle"))
   val mongoDB = mongoConn("casbah_test")
   val account = new TwilioRestClient("AC420cb3581df14275a7fd6bfd8f1207ff", "c2990d1fa7bba4bfa96f95caefdd20d0").getAccount()
 
