@@ -21,6 +21,30 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     session.invalidate
   }
 
+  get("/waiting") {
+    auth(session)
+    contentType = "text/html"
+    templateEngine.layout("/WEB-INF/layouts/waiting.scaml",
+                          Map("error" -> flash.contains("error")))
+  }
+
+  def inQueue(session: HttpSession): Boolean = {
+    mongoDB("queue").findOne(MongoDBObject("members"-> session("number"))).isDefined
+  }
+
+  get("/advance") {
+    auth(session)
+    contentType = "text/html"
+    if (inQueue(session)) {
+      redirect("/queue")
+    }
+    else {
+      flash += ("error" -> "Liar!")
+      redirect("/waiting")
+    }
+    templateEngine.layout("/WEB-INF/layouts/advance.scaml")
+  }
+
   def auth(session: HttpSession): Boolean = {
     session.contains("number") && session.contains("pw") && exists(
       mongoDB("user").findOne(
@@ -81,7 +105,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   def finishGame(session: HttpSession, winner: String) {
-    val tmp = mongoDB("fight").findOne(MongoDBObject("member" -> session("number"))).get
+    val tmp = mongoDB("fight").findOne(MongoDBObject("members" -> session("number"))).get
     mongoDB("relax").insert(MongoDBObject("bar" -> tmp.get("bar"),
                                           "members" -> tmp.get(winner)))
     mongoDB("fight").remove(tmp)
