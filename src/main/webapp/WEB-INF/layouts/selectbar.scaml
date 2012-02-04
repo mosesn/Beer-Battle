@@ -16,7 +16,7 @@
       %ul(class="rounded")
         -for((x, index) <- bars.zipWithIndex)
           -val what = x.get("name")
-	  -val id = x.get("_id")
+          -val id = x.get("_id")
           %li(class="radio")    
             %input(type="radio" name="bar" id="#{index}" value="#{id}")/
             #{what}          
