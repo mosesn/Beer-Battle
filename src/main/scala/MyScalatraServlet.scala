@@ -86,11 +86,17 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     }
   }
 
+  def currentGame(session: HttpSession): Option[DBObject] = {
+    return mongoDB("fight").findOne(MongoDBObject("members" -> session("number")))
+  }
+
   get("/ingame") {
     auth(session)
     if (inGame(session)) {
       contentType = "text/html"
-      templateEngine.layout("/WEB-INF/layouts/ingame.scaml")
+      val tmp = currentGame(session).get
+      templateEngine.layout("/WEB-INF/layouts/ingame.scaml",
+                            Map("oid" -> tmp("_id")))
     }
     else {
       redirect("/")
@@ -99,7 +105,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
   def inGame(session: HttpSession): Boolean = {
     if (session.contains("number")) {
-      mongoDB("fight").findOne(MongoDBObject("members" -> session("number"))).isDefined
+      currentGame(session).isDefined
     }
     else {
       false
@@ -107,11 +113,13 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   def finishGame(session: HttpSession, winner: String) {
-    val tmp = mongoDB("fight").findOne(MongoDBObject("members" -> session("number"))).get
-    mongoDB("relax").insert(MongoDBObject("bar" -> tmp.get("bar"),
-                                          "members" -> tmp.get(winner)))
-    mongoDB("fight").remove(tmp)
-    println("NEW GAME")
+    val tmp = mongoDB("fight").findOneByID(new ObjectId(params("member").asInstanceOf[String]))
+    val relaxer = MongoDBObject("bar" -> tmp.get("bar"),
+                                          "members" -> tmp.get(winner))
+    println(relaxer)
+    mongoDB("relax").insert(relaxer)
+    /*mongoDB("fight").remove(tmp)
+    println("NEW GAME")*/
   }
 
   def newFight(bar: String) {
@@ -126,10 +134,12 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   def sendMessage(to: String, from: String, body: String) {
+    println("I TOTALLY SENT A MESSAGE HERE")
+    /*
     val smsFactory = account.getSmsFactory();
     smsFactory.create(Map("To" -> to,
                           "From" -> from, // Replace with a valid phone number in your account
-                          "Body" -> body))
+                          "Body" -> body))*/
   }
 
   def engagePlayers(first: DBObject, second: DBObject) {
@@ -232,7 +242,6 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
 
   post("/selectbar") {
     if (params.contains("bar")) {
-      println(params("bar"))
       session("bar") = params("bar").asInstanceOf[String]
       redirect("/jointeam")
     }
@@ -361,7 +370,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     else {
       mongoColl.insert(MongoDBObject("size" -> 1,
                                      "members" -> Array(session("number")),
-                                     "pw" -> pw,
+                                     "pw" -> hash(pw),
                                      "bar" -> session("bar"),
                                      "number" -> session("number"),
                                      "name" -> old("fname")))

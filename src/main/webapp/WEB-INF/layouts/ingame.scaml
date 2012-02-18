@@ -1,4 +1,6 @@
 -attributes("layout") = ""
+-import com.mongodb.casbah.Imports._
+-@ val oid: ObjectId
 %html
   %head
     <!-- Change theme here -->
@@ -11,7 +13,9 @@
         BattleGround
     %form(action="/finish" method="post")
       %input(type="hidden" name="winner" value="home")
+      %input(type="hidden" name="member" value="#{oid}")
       %input(type="submit" value="Home")
     %form(action="/finish" method="post")
       %input(type="hidden" name="winner" value="away")
+      %input(type="hidden" name="member" value="#{oid}")
       %input(type="submit" value="Away")
