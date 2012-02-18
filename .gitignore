@@ -4,3 +4,4 @@ target
 project/boot
 project/target
 project/plugins/target
+*.DS_Store
