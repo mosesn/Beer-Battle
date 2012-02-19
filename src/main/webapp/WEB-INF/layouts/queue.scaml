@@ -1,6 +1,7 @@
 - attributes("layout") = ""
 -import com.mongodb.casbah.Imports._
--@ val battlers: MongoCursor
+-import scala.collection.mutable.MutableList
+-@ val battlers: Iterator[MutableList[String]]
 -@ val queue: MongoCursor
 %html
   %head
@@ -15,9 +16,9 @@
     %div
       %ul(class="battleGround")
         -for(x <- battlers)
-          -val battler = x.get("name")
-          %li
-            #{battler}
+          -for(y <- x)
+            %li
+              #{y}
       %ul(class="rounded")
         -for(x <- queue)
           -val name = x.get("name")

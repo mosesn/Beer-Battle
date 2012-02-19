@@ -116,10 +116,11 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     val tmp = mongoDB("fight").findOneByID(new ObjectId(params("member").asInstanceOf[String]))
     val relaxer = MongoDBObject("bar" -> tmp.get("bar"),
                                           "members" -> tmp.get(winner))
-    println(relaxer)
     mongoDB("relax").insert(relaxer)
-    /*mongoDB("fight").remove(tmp)
-    println("NEW GAME")*/
+    mongoDB("fight").remove(tmp.get)
+    //old team is deleted!  does this make sense?
+
+    println("NEW GAME")
   }
 
   def newFight(bar: String) {
@@ -268,40 +269,58 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
       contentType = "text/html"
       val coll = mongoDB("team")
       val opt = coll.findOne(MongoDBObject("size" -> 2, "members" -> session("number")))
-      if (busyBar(session)) {
-        opt match {
-          case Some(x) => {
-            coll.remove(MongoDBObject("_id" -> x.get("_id")))
-            x.removeKey("_id")
-            x.put("time", new Date())
-            mongoDB("queue").insert(x)
-          }
-          case None => redirect("/jointeam")
-        }
-      }
-      else {
-        opt match {
-          case Some(x) => {
-            coll.remove(x)
-            x.removeKey("_id")
-            val otherUser = getNextUser(session("bar").asInstanceOf[String], session("number").asInstanceOf[String])
-            if (otherUser.isDefined) {
-              engagePlayers(otherUser.get, x)
-            }
-            else {
+
+      if (!inQueue(session)) {
+        if (busyBar(session)) {
+          opt match {
+            case Some(x) => {
+              coll.remove(MongoDBObject("_id" -> x.get("_id")))
+              x.removeKey("_id")
+              x.put("time", new Date())
               mongoDB("queue").insert(x)
             }
+            case None => redirect("/jointeam")
           }
-          case None => 0
+        }
+        else {
+          opt match {
+            case Some(x) => {
+              coll.remove(x)
+              x.removeKey("_id")
+              val otherUser = getNextUser(session("bar").asInstanceOf[String], session("number").asInstanceOf[String])
+              if (otherUser.isDefined) {
+                engagePlayers(otherUser.get, x)
+              }
+              else {
+                mongoDB("queue").insert(x)
+              }
+            }
+            case None => 0
+          }
         }
       }
       val queue = mongoDB("queue").find(MongoDBObject("bar" -> session("bar"))).sort(MongoDBObject("time" -> 1))
       val battlers = mongoDB("fight").find(MongoDBObject("bar" -> session("bar")))
-      templateEngine.layout("/WEB-INF/layouts/queue.scaml", Map("battlers" -> battlers, "queue" -> queue))
+      val temp = (battlers map getNames)
+      println(temp)
+      templateEngine.layout("/WEB-INF/layouts/queue.scaml", Map("battlers" -> temp, "queue" -> queue))
     }
     else {
       redirect("/")
     }
+  }
+
+  def getNames(obj: DBObject): LinearSeq[String] = {
+    val tmp = obj.get("members").asInstanceOf[BasicDBList] map (x => mongoDB("user").findOne(MongoDBObject("number" -> x)))
+    for (x <- tmp) {
+      println(x)
+    }
+    val temp = tmp map (_.get.get("fname").asInstanceOf[String])
+    println(temp)
+    for (x <- temp) {
+      println(x)
+    }
+    temp
   }
 
   def getNextUser(bar: String, number: String): Option[DBObject] = {
