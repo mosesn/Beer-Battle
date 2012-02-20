@@ -8,35 +8,51 @@ import javax.servlet.http.HttpSession
 import scala.util.matching.Regex
 import com.twilio.sdk.TwilioRestClient
 import scala.collection.JavaConversions._
+import scala.collection.mutable.LinearSeq
 
 class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with ScalateSupport {
 
+  before() {
+
+    val current = request.getRequestURI
+    if (unsafe(current)) {
+      contentType = "text/html"
+      if (auth(session)) {
+        directToProperURI(current)
+      }
+      else {
+        if (unAuthorized(current)) {
+          redirect("/")
+        }
+      }
+    }
+  }
+
+  def unsafe(current: String): Boolean = {
+    !safeDirs.foldLeft(false)(_ || current.startsWith(_))
+  }
+
+  val safeDirs = List("/css/")
+
   get("/") {
-    contentType = "text/html"
-    val map = Map("logged_in" -> auth(session))
-    templateEngine.layout("/WEB-INF/layouts/default.scaml", map)
+    templateEngine.layout("/WEB-INF/layouts/default.scaml", Map("logged_in" -> auth(session)))
   }
 
   get("/signout") {
-    contentType = "text/html"
     session.invalidate
     redirect("/")
   }
 
   get("/waiting") {
-    auth(session)
-    contentType = "text/html"
     templateEngine.layout("/WEB-INF/layouts/waiting.scaml",
                           Map("error" -> flash.contains("error")))
   }
 
-  def inQueue(session: HttpSession): Boolean = {
-    mongoDB("queue").findOne(MongoDBObject("members"-> session("number"))).isDefined
-  }
+  def inQueue(session: HttpSession): Boolean = currentQueued(session).isDefined
+  def inWaiting(session: HttpSession): Boolean = currentWaiting(session).isDefined
 
+  //TODO: Are we keeping this?
   get("/advance") {
-    auth(session)
-    contentType = "text/html"
     if (inQueue(session)) {
       redirect("/queue")
     }
@@ -48,69 +64,71 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   def auth(session: HttpSession): Boolean = {
-    session.contains("number") && session.contains("pw") && exists(
-      mongoDB("user").findOne(
-        MongoDBObject("number" -> session("number"),
-                      "pw" -> session("pw"))))
-  }
-
-  def exists(doc: Option[DBObject]): Boolean = doc match {
-    case Some(x) => true
-    case None => false
+    session.contains("number") && session.contains("pw") && mongoDB("user").findOne(
+      MongoDBObject("number" -> session("number"),
+                    "pw" -> session("pw"))).isDefined
   }
 
   post("/signup") {
     verifyInput(params)
-
+    val stripped = stripNumber(params("number"))
     val pw =  hash(params("password"))
     val newObj = MongoDBObject("fname" -> params("fname"),
                                "lname" -> params("lname"),
-                               "number" -> stripNumber(params("number")),
+                               "number" -> stripped,
                                "pw" -> pw)
     mongoDB("user").insert(newObj)
-    session("number") = stripNumber(params("number"))
+    session("number") = stripped
     session("pw") = pw
     redirect("/selectbar")
   }
 
-/*  before() {
-    if (inGame(session)) {
+  def directToProperURI(current: String) {
+    if (inGame(session) && !gameSet.contains(current)) {
+      joinBar(currentGame(session).get("bar").asInstanceOf[String])
       redirect("/ingame")
     }
-  }*/
+    else if (inQueue(session) && !queueSet.contains(current)) {
+      joinBar(currentQueued(session).get("bar").asInstanceOf[String])
+      redirect("/queue")
+    }
+    else if (inWaiting(session) && !waitingSet.contains(current)) {
+      joinBar(currentWaiting(session).get("bar").asInstanceOf[String])
+      redirect("/waiting")
+    }
+  }
+
+  def unAuthorized(current: String) : Boolean = {
+    !noAuth.contains(current)
+  }
+
+  val noAuth = Set("/", "/login")
+  val gameSet = Set("/ingame", "/signout", "/finish")
+  val queueSet = Set("/queue", "/signout")
+  val waitingSet = Set("/waiting", "/advance", "/signout")
 
   post("/finish") {
-    auth(session)
-    if (inGame(session)) {
-      finishGame(session, params("winner").asInstanceOf[String])
-    }
+    finishGame(session, params("winner").asInstanceOf[String])
   }
 
   def currentGame(session: HttpSession): Option[DBObject] = {
     return mongoDB("fight").findOne(MongoDBObject("members" -> session("number")))
   }
 
-  get("/ingame") {
-    auth(session)
-    if (inGame(session)) {
-      contentType = "text/html"
-      val tmp = currentGame(session).get
-      templateEngine.layout("/WEB-INF/layouts/ingame.scaml",
-                            Map("oid" -> tmp("_id")))
-    }
-    else {
-      redirect("/")
-    }
+  def currentQueued(session: HttpSession): Option[DBObject] = {
+    return mongoDB("queue").findOne(MongoDBObject("members" -> session("number")))
   }
 
-  def inGame(session: HttpSession): Boolean = {
-    if (session.contains("number")) {
-      currentGame(session).isDefined
-    }
-    else {
-      false
-    }
+  def currentWaiting(session: HttpSession): Option[DBObject] = {
+    return mongoDB("team").findOne(MongoDBObject("members" -> session("number")))
   }
+
+  get("/ingame") {
+    templateEngine.layout("/WEB-INF/layouts/ingame.scaml",
+                          Map("oid" -> currentGame(session).get("_id")))
+  }
+
+  def inGame(session: HttpSession): Boolean = currentGame(session).isDefined
 
   def finishGame(session: HttpSession, winner: String) {
     val tmp = mongoDB("fight").findOneByID(new ObjectId(params("member").asInstanceOf[String]))
@@ -123,6 +141,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
     println("NEW GAME")
   }
 
+  //TODO: is this actually useful?  think about it.
   def newFight(bar: String) {
     val iter = mongoDB("queue").find(MongoDBObject("bar" -> bar)).sort(MongoDBObject("time" -> 1)).limit(2)
     if (iter.hasNext){
@@ -135,7 +154,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   def sendMessage(to: String, from: String, body: String) {
-    println("I TOTALLY SENT A MESSAGE HERE")
+    println("I TOTALLY SENT A MESSAGE HERE") //TODO: for production, switch this
     /*
     val smsFactory = account.getSmsFactory();
     smsFactory.create(Map("To" -> to,
@@ -211,39 +230,36 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   def validate(result: Option[DBObject]): Unit = {
-    result match {
-      case Some(s) => 2
-      case None => {
-        flash += ("error" -> "Wrong password.")
-        redirect("/login")
-      }
+    if (!result.isDefined) {
+      flash += ("error" -> "Wrong password.")
+      redirect("/login")
     }
-
   }
 
   val mongoConn = MongoConnection("staff.mongohq.com", 10018)
   val mongoDB = mongoConn("beerbattle")
   mongoDB.authenticate("augusto", "penis")
 
-  val account = new TwilioRestClient("AC420cb3581df14275a7fd6bfd8f1207ff", "c2990d1fa7bba4bfa96f95caefdd20d0").getAccount()
+  val account = new TwilioRestClient("AC420cb3581df14275a7fd6bfd8f1207ff",
+                                     "c2990d1fa7bba4bfa96f95caefdd20d0").getAccount()
 
   get("/signup") {
-    contentType = "text/html"
-    val map = Map("error" -> flash.contains("error"))
-    val myType = flash.getOrElse("error", "")
-    val rest = Map("myType" -> myType)
-    templateEngine.layout("/WEB-INF/layouts/signup.scaml", map ++ rest)
+    val map = Map("error" -> flash.contains("error"), "myType" -> flash.getOrElse("error", ""))
+    templateEngine.layout("/WEB-INF/layouts/signup.scaml", map)
   }
 
   get("/login") {
-    contentType = "text/html"
-    val map = Map("error" -> (flash.contains("error")))
-    templateEngine.layout("/WEB-INF/layouts/login.scaml", map)
+    templateEngine.layout("/WEB-INF/layouts/login.scaml",
+                          Map("error" -> (flash.contains("error"))))
+  }
+
+  def joinBar(bar: String) {
+      session("bar") = bar
   }
 
   post("/selectbar") {
     if (params.contains("bar")) {
-      session("bar") = params("bar").asInstanceOf[String]
+      joinBar(params("bar").asInstanceOf[String])
       redirect("/jointeam")
     }
     else {
@@ -253,74 +269,54 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   get("/selectbar") {
-    if (auth(session)) {
-      contentType = "text/html"
-      templateEngine.layout("/WEB-INF/layouts/selectbar.scaml",
-                            Map("bars" -> mongoDB("bar").find(),
-                                "error" -> flash.contains("error")))
-    }
-    else {
-      redirect("/")
-    }
+    templateEngine.layout("/WEB-INF/layouts/selectbar.scaml",
+                          Map("bars" -> mongoDB("bar").find(),
+                              "error" -> flash.contains("error")))
   }
 
-  get("/queue") {
-    if (auth(session)) {
-      contentType = "text/html"
-      val coll = mongoDB("team")
-      val opt = coll.findOne(MongoDBObject("size" -> 2, "members" -> session("number")))
 
-      if (!inQueue(session)) {
-        if (busyBar(session)) {
-          opt match {
-            case Some(x) => {
-              coll.remove(MongoDBObject("_id" -> x.get("_id")))
-              x.removeKey("_id")
-              x.put("time", new Date())
-              mongoDB("queue").insert(x)
-            }
-            case None => redirect("/jointeam")
+  //TODO: this should be much more clear.
+  get("/queue") {
+    val coll = mongoDB("team")
+    val opt = coll.findOne(MongoDBObject("size" -> 2, "members" -> session("number")))
+
+    if (!inQueue(session)) {
+      if (busyBar(session)) {
+        opt match {
+          case Some(x) => {
+            coll.remove(MongoDBObject("_id" -> x.get("_id")))
+            x.removeKey("_id")
+            x.put("time", new Date())
+            mongoDB("queue").insert(x)
           }
-        }
-        else {
-          opt match {
-            case Some(x) => {
-              coll.remove(x)
-              x.removeKey("_id")
-              val otherUser = getNextUser(session("bar").asInstanceOf[String], session("number").asInstanceOf[String])
-              if (otherUser.isDefined) {
-                engagePlayers(otherUser.get, x)
-              }
-              else {
-                mongoDB("queue").insert(x)
-              }
-            }
-            case None => 0
-          }
+          case None => redirect("/jointeam")
         }
       }
-      val queue = mongoDB("queue").find(MongoDBObject("bar" -> session("bar"))).sort(MongoDBObject("time" -> 1))
-      val battlers = mongoDB("fight").find(MongoDBObject("bar" -> session("bar")))
-      val temp = (battlers map getNames)
-      println(temp)
-      templateEngine.layout("/WEB-INF/layouts/queue.scaml", Map("battlers" -> temp, "queue" -> queue))
+      else {
+        opt match {
+          case Some(x) => {
+            coll.remove(x)
+            x.removeKey("_id")
+            val otherUser = getNextUser(session("bar").asInstanceOf[String], session("number").asInstanceOf[String])
+            if (otherUser.isDefined) {
+              engagePlayers(otherUser.get, x)
+            }
+            else {
+              mongoDB("queue").insert(x)
+            }
+          }
+          case None => 0
+        }
+      }
     }
-    else {
-      redirect("/")
-    }
+    val queue = mongoDB("queue").find(MongoDBObject("bar" -> session("bar"))).sort(MongoDBObject("time" -> 1))
+    val battlers = mongoDB("fight").find(MongoDBObject("bar" -> session("bar")))
+    templateEngine.layout("/WEB-INF/layouts/queue.scaml", Map("battlers" -> (battlers map getNames), "queue" -> queue))
   }
 
+  //helper function to get names for the battlers.
   def getNames(obj: DBObject): LinearSeq[String] = {
-    val tmp = obj.get("members").asInstanceOf[BasicDBList] map (x => mongoDB("user").findOne(MongoDBObject("number" -> x)))
-    for (x <- tmp) {
-      println(x)
-    }
-    val temp = tmp map (_.get.get("fname").asInstanceOf[String])
-    println(temp)
-    for (x <- temp) {
-      println(x)
-    }
-    temp
+    obj.get("members").asInstanceOf[BasicDBList] map (x => mongoDB("user").findOne(MongoDBObject("number" -> x))) map (_.get.get("fname").asInstanceOf[String])
   }
 
   def getNextUser(bar: String, number: String): Option[DBObject] = {
@@ -334,9 +330,10 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   def busyBar(session: HttpSession): Boolean = {
-    val barOccupancy = mongoDB("bar").findOne(MongoDBObject("_id" -> new ObjectId(session("bar").asInstanceOf[String]))).get.get("size")
-    mongoDB("fight").find(MongoDBObject("bar" -> session("bar"))).length == barOccupancy
+    mongoDB("fight").find(MongoDBObject("bar" -> session("bar"))).length == getBarSize
   }
+
+  def getBarSize : Int = mongoDB("bar").findOne(MongoDBObject("_id" -> new ObjectId(session("bar").asInstanceOf[String]))).get("size").asInstanceOf[Int]
 
   post("/jointeam") {
     val coll = mongoDB("team")
@@ -363,18 +360,13 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   get("/jointeam"){
-    if (auth(session)) {
-      contentType = "text/html"
-      val tmp = mongoDB("team").find(MongoDBObject("bar" -> session("bar"), "size" -> MongoDBObject("$lt" -> 2),
+    val tmp = mongoDB("team").find(MongoDBObject("bar" -> session("bar"), "size" -> MongoDBObject("$lt" -> 2),
                                                  "members" -> MongoDBObject("$ne" -> session("number"))))
-      templateEngine.layout("/WEB-INF/layouts/jointeam.scaml",
-                            Map("teams" -> tmp, "error" -> flash.getOrElse("error", "")))
-    }
-    else {
-      redirect("/")
-    }
+    templateEngine.layout("/WEB-INF/layouts/jointeam.scaml",
+                          Map("teams" -> tmp, "error" -> flash.getOrElse("error", "")))
   }
 
+  //TODO: could be worth trying this out with a map instead of a dbobject
   post("/createteam") {
     val pw = params("pw")
     val mongoColl = mongoDB("team")
@@ -398,13 +390,7 @@ class MyScalatraServlet extends ScalatraServlet with FlashMapSupport with Scalat
   }
 
   get("/createteam"){
-    if (auth(session)) {
-      contentType = "text/html"
-      templateEngine.layout("/WEB-INF/layouts/createteam.scaml")
-    }
-    else {
-      redirect("/")
-    }
+    templateEngine.layout("/WEB-INF/layouts/createteam.scaml")
   }
 
   notFound {
