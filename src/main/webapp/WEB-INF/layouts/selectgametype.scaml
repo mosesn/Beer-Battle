@@ -1,0 +1,43 @@
+-attributes("layout") = ""
+
+%html
+  %head
+    <!-- Change theme here -->
+    <meta name="viewport" content="user-scalable=no, width=device-width"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    %link(type="text/css" rel="stylesheet" media="screen" href="/css/iphone.css")
+    
+  %body
+    %div
+      %h1(class="title")      
+        Select Game Type
+    %br/         
+    %form(action="/ingame" method="post")
+      %ul(class="rounded")
+        %li
+          %input(type="radio" value="Flip Cup")/
+            Flip Cup 
+        %li
+          Flip Cup Rules
+        %li
+          %input(type="radio" value="Hollywood Boulepong")/
+            Hollywood Boulepong 
+        %li
+          Hollywood Boulepong Rules
+        %li
+          %input(type="radio" value="Free the Hostages")/
+            Free the Hostages 
+        %li
+          Free the Hostages Rules
+        %li
+          %input(type="radio" value="Lightning Round")/
+            Lightning Round 
+        %li
+          Lightning Round Rules
+        %li
+          %input(type="radio" value="Standard Six Cup")/
+            Standard Six Cup 
+        %li
+          Standard Six Cup Rules
+        %li
+          %input(type="submit" value="submit")/
